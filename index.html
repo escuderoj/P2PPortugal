@@ -1,87 +1,172 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>P2P Portugal – Crowdlending em Portugal</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f5f7fa;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>P2P Portugal – Crowdlending em Portugal</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body, html {
+    margin: 0; padding: 0;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: white;
+    background: url('https://yt3.ggpht.com/ytc/AMLnZu9xy65cvfwCUjw8D6FwQZNUzRwxfYqyW7aBvwfc=s1920-c-k-c0x00ffffff-no-rj') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    min-height: 100vh;
+    backdrop-filter: brightness(0.5);
+  }
+  .container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 700px;
+    width: 100%;
+  }
+  img.logo {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid #00aaff;
+  }
+  h1 {
+    margin: 0.2rem 0 0.5rem;
+    font-size: 2.5rem;
+    color: #00aaff;
+  }
+  p.description {
+    font-size: 1.2rem;
+    margin: 0 0 1.5rem;
+    line-height: 1.4;
+  }
+  a.button-link {
+    display: inline-block;
+    background-color: #00aaff;
+    color: white;
+    font-weight: 600;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+    margin-bottom: 2rem;
+  }
+  a.button-link:hover {
+    background-color: #008ecc;
+  }
+  /* Carousel styles */
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding-bottom: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #00aaff transparent;
+  }
+  .carousel::-webkit-scrollbar {
+    height: 8px;
+  }
+  .carousel::-webkit-scrollbar-thumb {
+    background-color: #00aaff;
+    border-radius: 4px;
+  }
+  .carousel a {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255 255 255 / 0.1);
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+  }
+  .carousel a:hover {
+    background: rgba(0, 170, 255, 0.3);
+  }
+  .carousel img {
+    max-height: 50px;
+    max-width: 140px;
+    object-fit: contain;
+    filter: brightness(1) saturate(1);
+    user-select: none;
+  }
+  footer {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  @media (max-width: 480px) {
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      font-size: 2rem;
     }
-    p {
-      font-size: 1.25rem;
-      margin-top: 0;
-      margin-bottom: 2rem;
-      max-width: 600px;
-    }
-    input[type="email"] {
-      padding: 0.75rem;
+    p.description {
       font-size: 1rem;
-      width: 280px;
-      max-width: 90vw;
-      border: 1px solid #ccc;
-      border-radius: 4px 0 0 4px;
-      outline: none;
     }
-    button {
-      padding: 0.75rem 1.25rem;
-      font-size: 1rem;
-      border: none;
-      background-color: #0070f3;
-      color: white;
-      cursor: pointer;
-      border-radius: 0 4px 4px 0;
-      transition: background-color 0.3s ease;
+    .carousel img {
+      max-height: 40px;
+      max-width: 100px;
     }
-    button:hover {
-      background-color: #005bb5;
-    }
-    form {
-      display: inline-flex;
-      align-items: center;
-    }
-    footer {
-      position: absolute;
-      bottom: 1rem;
-      font-size: 0.9rem;
-      color: #666;
-    }
-  </style>
+  }
+</style>
 </head>
 <body>
-  <h1>P2P Portugal 🇵🇹</h1>
-  <p>Plataforma independente para investidores portugueses em crowdlending e financiamento coletivo.<br />
-    Informação, análise e transparência — tudo num só lugar.</p>
-  
-  <form action="#" method="post" id="subscribe-form">
-    <input type="email" placeholder="O teu melhor email" required />
-    <button type="submit">Subscrever</button>
-  </form>
+  <div class="container">
+    <img
+      src="https://yt3.ggpht.com/ytc/AMLnZu_1Rk1Yo1hcDUs6lOjD2O2RjZhD6vlOU9GxmUsCrw=s176-c-k-c0x00ffffff-no-rj"
+      alt="Logo P2P Portugal"
+      class="logo"
+    />
+    <h1>P2P Portugal 🇵🇹</h1>
+    <p class="description">
+      Plataforma independente para investidores portugueses em crowdlending e financiamento coletivo.<br />
+      Informação, análise e transparência — tudo num só lugar.
+    </p>
+    <a href="https://www.youtube.com/@P2PPortugal?sub_confirmation=1" target="_blank" class="button-link" rel="noopener noreferrer">
+      Subscreve o nosso canal no YouTube
+    </a>
 
+    <div class="carousel" aria-label="Logos das plataformas P2P">
+      <a href="https://bondora.com/ref/BO59K5451A" target="_blank" rel="noopener noreferrer" title="Bondora">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Bondora_Logo.png" alt="Bondora Logo" />
+      </a>
+      <a href="https://debitum.investments/es/r/INHXT" target="_blank" rel="noopener noreferrer" title="Debitum">
+        <img src="https://debitum.com/wp-content/uploads/2022/02/logo_black.svg" alt="Debitum Logo" />
+      </a>
+      <a href="https://getincome.com/register?ref_code=0O674X" target="_blank" rel="noopener noreferrer" title="Income">
+        <img src="https://getincome.com/static/media/logo.66e5e022.svg" alt="Income Logo" />
+      </a>
+      <a href="https://app.maclear.ch/en/registration?ref=DD1E7S" target="_blank" rel="noopener noreferrer" title="MaClear">
+        <img src="https://app.maclear.ch/static/media/logo.437f72f4.svg" alt="Maclear Logo" />
+      </a>
+      <a href="https://www.mintos.com/es/l/ref/I0Z2X2" target="_blank" rel="noopener noreferrer" title="Mintos">
+        <img src="https://www.mintos.com/wp-content/themes/mintos2019/assets/img/logo.svg" alt="Mintos Logo" />
+      </a>
+      <a href="https://smartsaver.monefit.com/en/referral/link?code=6dqz3aom" target="_blank" rel="noopener noreferrer" title="Monefit">
+        <img src="https://monefit.com/wp-content/uploads/2023/01/monefit-logo.svg" alt="Monefit Logo" />
+      </a>
+      <a href="https://nectaro.eu/registration/individual/?referralCode=E6F9D" target="_blank" rel="noopener noreferrer" title="Nectaro">
+        <img src="https://nectaro.eu/wp-content/themes/nectaro/assets/img/logo.svg" alt="Nectaro Logo" />
+      </a>
+      <a href="https://ventus.energy/join/ODLtQPbj" target="_blank" rel="noopener noreferrer" title="Ventus">
+        <img src="https://ventus.energy/wp-content/uploads/2021/05/ventus_logo.svg" alt="Ventus Logo" />
+      </a>
+      <a href="https://app.8lends.io/?referral=TyOS6P" target="_blank" rel="noopener noreferrer" title="8Lends">
+        <img src="https://app.8lends.io/static/media/logo_8lends_white.841cd9e7.svg" alt="8Lends Logo" />
+      </a>
+    </div>
+  </div>
   <footer>© 2025 P2P Portugal</footer>
-
-  <script>
-    // Aqui poderás adicionar integração com MailerLite, ConvertKit, etc.
-    document.getElementById('subscribe-form').addEventListener('submit', function(e) {
-      e.preventDefault();
-      alert('Obrigado por subscrever! Em breve receberás novidades.');
-      this.reset();
-    });
-  </script>
 </body>
 </html>
