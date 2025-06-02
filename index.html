@@ -4,17 +4,18 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>P2P Portugal – Crowdlending em Portugal</title>
+<link rel="icon" type="image/png" href="assets/img/favicon.png" />
 <style>
   * {
     box-sizing: border-box;
   }
-  body, html {
+  html, body {
     margin: 0; padding: 0;
     height: 100%;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     color: white;
-    background: url('https://yt3.ggpht.com/ytc/AMLnZu9xy65cvfwCUjw8D6FwQZNUzRwxfYqyW7aBvwfc=s1920-c-k-c0x00ffffff-no-rj') no-repeat center center fixed;
+    background: url('assets/img/banner-background.jpg') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -23,14 +24,15 @@
     text-align: center;
     padding: 1rem;
     min-height: 100vh;
-    backdrop-filter: brightness(0.5);
+    backdrop-filter: brightness(0.45);
   }
   .container {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 34, 55, 0.75); /* azul escuro translúcido */
     padding: 2rem;
-    border-radius: 10px;
+    border-radius: 12px;
     max-width: 700px;
     width: 100%;
+    box-shadow: 0 0 15px rgba(0,170,255,0.7);
   }
   img.logo {
     border-radius: 50%;
@@ -38,32 +40,39 @@
     height: 120px;
     object-fit: cover;
     margin-bottom: 1rem;
-    border: 3px solid #00aaff;
+    border: 3px solid #00cfff;
+    box-shadow: 0 0 12px #00cfff;
   }
   h1 {
     margin: 0.2rem 0 0.5rem;
-    font-size: 2.5rem;
-    color: #00aaff;
+    font-size: 2.8rem;
+    color: #00cfff;
+    text-shadow: 0 0 10px #00aaff;
   }
   p.description {
     font-size: 1.2rem;
-    margin: 0 0 1.5rem;
+    margin: 0 0 1.8rem;
     line-height: 1.4;
+    color: #bdeeff;
+    text-shadow: 0 0 5px #0088bb44;
   }
   a.button-link {
     display: inline-block;
-    background-color: #00aaff;
-    color: white;
-    font-weight: 600;
-    padding: 0.8rem 1.5rem;
-    border-radius: 6px;
+    background-color: #00cfff;
+    color: #003344;
+    font-weight: 700;
+    padding: 0.9rem 1.7rem;
+    border-radius: 8px;
     text-decoration: none;
-    font-size: 1.1rem;
-    transition: background-color 0.3s;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, color 0.3s;
     margin-bottom: 2rem;
+    box-shadow: 0 0 10px #00cfff88;
   }
   a.button-link:hover {
-    background-color: #008ecc;
+    background-color: #008fcc;
+    color: white;
+    box-shadow: 0 0 20px #00aaffcc;
   }
   /* Carousel styles */
   .carousel {
@@ -73,13 +82,13 @@
     padding-bottom: 0.5rem;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
-    scrollbar-color: #00aaff transparent;
+    scrollbar-color: #00cfff transparent;
   }
   .carousel::-webkit-scrollbar {
     height: 8px;
   }
   .carousel::-webkit-scrollbar-thumb {
-    background-color: #00aaff;
+    background-color: #00cfff;
     border-radius: 4px;
   }
   .carousel a {
@@ -88,15 +97,15 @@
     align-items: center;
     justify-content: center;
     background: rgba(255 255 255 / 0.1);
-    padding: 10px 15px;
-    border-radius: 10px;
+    padding: 12px 18px;
+    border-radius: 12px;
     transition: background-color 0.3s;
   }
   .carousel a:hover {
-    background: rgba(0, 170, 255, 0.3);
+    background: rgba(0, 207, 255, 0.3);
   }
   .carousel img {
-    max-height: 50px;
+    max-height: 52px;
     max-width: 140px;
     object-fit: contain;
     filter: brightness(1) saturate(1);
@@ -105,28 +114,30 @@
   footer {
     margin-top: 2rem;
     font-size: 0.9rem;
-    color: #ccc;
+    color: #aaddee;
+    text-shadow: 0 0 4px #004466aa;
   }
   @media (max-width: 480px) {
     h1 {
-      font-size: 2rem;
+      font-size: 2.2rem;
     }
     p.description {
-      font-size: 1rem;
+      font-size: 1.05rem;
     }
     .carousel img {
-      max-height: 40px;
+      max-height: 42px;
       max-width: 100px;
     }
   }
 </style>
 </head>
 <body>
-  <div class="container">
+  <div class="container" role="main">
     <img
-      src="https://yt3.ggpht.com/ytc/AMLnZu_1Rk1Yo1hcDUs6lOjD2O2RjZhD6vlOU9GxmUsCrw=s176-c-k-c0x00ffffff-no-rj"
+      src="assets/img/logo-p2pportugal.png"
       alt="Logo P2P Portugal"
       class="logo"
+      width="120" height="120"
     />
     <h1>P2P Portugal 🇵🇹</h1>
     <p class="description">
@@ -139,31 +150,31 @@
 
     <div class="carousel" aria-label="Logos das plataformas P2P">
       <a href="https://bondora.com/ref/BO59K5451A" target="_blank" rel="noopener noreferrer" title="Bondora">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Bondora_Logo.png" alt="Bondora Logo" />
+        <img src="assets/img/logos/bondora.png" alt="Bondora Logo" />
       </a>
       <a href="https://debitum.investments/es/r/INHXT" target="_blank" rel="noopener noreferrer" title="Debitum">
-        <img src="https://debitum.com/wp-content/uploads/2022/02/logo_black.svg" alt="Debitum Logo" />
+        <img src="assets/img/logos/debitum.png" alt="Debitum Logo" />
       </a>
       <a href="https://getincome.com/register?ref_code=0O674X" target="_blank" rel="noopener noreferrer" title="Income">
-        <img src="https://getincome.com/static/media/logo.66e5e022.svg" alt="Income Logo" />
+        <img src="assets/img/logos/income.png" alt="Income Logo" />
       </a>
       <a href="https://app.maclear.ch/en/registration?ref=DD1E7S" target="_blank" rel="noopener noreferrer" title="MaClear">
-        <img src="https://app.maclear.ch/static/media/logo.437f72f4.svg" alt="Maclear Logo" />
+        <img src="assets/img/logos/maclear.png" alt="MaClear Logo" />
       </a>
       <a href="https://www.mintos.com/es/l/ref/I0Z2X2" target="_blank" rel="noopener noreferrer" title="Mintos">
-        <img src="https://www.mintos.com/wp-content/themes/mintos2019/assets/img/logo.svg" alt="Mintos Logo" />
+        <img src="assets/img/logos/mintos.png" alt="Mintos Logo" />
       </a>
       <a href="https://smartsaver.monefit.com/en/referral/link?code=6dqz3aom" target="_blank" rel="noopener noreferrer" title="Monefit">
-        <img src="https://monefit.com/wp-content/uploads/2023/01/monefit-logo.svg" alt="Monefit Logo" />
+        <img src="assets/img/logos/monefit.png" alt="Monefit Logo" />
       </a>
       <a href="https://nectaro.eu/registration/individual/?referralCode=E6F9D" target="_blank" rel="noopener noreferrer" title="Nectaro">
-        <img src="https://nectaro.eu/wp-content/themes/nectaro/assets/img/logo.svg" alt="Nectaro Logo" />
+        <img src="assets/img/logos/nectaro.png" alt="Nectaro Logo" />
       </a>
       <a href="https://ventus.energy/join/ODLtQPbj" target="_blank" rel="noopener noreferrer" title="Ventus">
-        <img src="https://ventus.energy/wp-content/uploads/2021/05/ventus_logo.svg" alt="Ventus Logo" />
+        <img src="assets/img/logos/ventus.png" alt="Ventus Logo" />
       </a>
       <a href="https://app.8lends.io/?referral=TyOS6P" target="_blank" rel="noopener noreferrer" title="8Lends">
-        <img src="https://app.8lends.io/static/media/logo_8lends_white.841cd9e7.svg" alt="8Lends Logo" />
+        <img src="assets/img/logos/8lends.png" alt="8Lends Logo" />
       </a>
     </div>
   </div>
