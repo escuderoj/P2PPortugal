@@ -27,10 +27,11 @@
       }
 
       header img.logo {
-		width: 120px;
-		height: 120px;
-		border-radius: 50%;
-		object-fit: cover;
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid rgba(255, 255, 255, 0.4);
       }
 
       h1 {
@@ -57,10 +58,13 @@
         animation: scroll 30s linear infinite;
       }
 
+      .carousel-track img {
+        border-radius: 8px;
+      }
+
       .carousel-track a img {
         height: 60px;
         object-fit: contain;
-        /*filter: brightness(0) invert(1);*/
       }
 
       @keyframes scroll {
@@ -99,8 +103,24 @@
         margin-right: 0.5rem;
       }
 
+      .promotions-link {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.75rem 1.5rem;
+        background-color: #00b894;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 6px;
+        transition: background-color 0.3s;
+      }
+
+      .promotions-link:hover {
+        background-color: #009e7a;
+      }
+
       footer {
-        margin-top: 3rem;
+        margin-top: 5rem;
         text-align: center;
         padding: 1rem 0;
         font-size: 0.9rem;
@@ -127,7 +147,7 @@
     <header>
       <img src="./assets/img/logo.png" alt="P2P Portugal" class="logo" />
       <h1>Prepara-te para explorar o mundo dos investimentos com confiança e clareza</h1>
-      <p class="subtitle">Com destaque claro para o espaço dos empréstimos P2P</p>
+      <p class="subtitle">Com destaque para o espaço dos empréstimos P2P</p>
     </header>
 
     <div class="carousel">
@@ -149,8 +169,12 @@
         <img src="./assets/img/youtube-icon.png" alt="YouTube" />
         Subscreve o nosso canal!
       </a>
+      <br /><br />
+      <a href="promocoes.html" class="promotions-link">Ver promoções das plataformas</a>
     </div>
 
-    <footer>&copy; 2025 P2P Portugal</footer>
+    <footer>
+      &copy; 2025 P2P Portugal · Contacto: <a href="mailto:p2pportugaloficial@gmail.com" style="color: #bbbbbb">p2pportugaloficial@gmail.com</a>
+    </footer>
   </body>
 </html>
