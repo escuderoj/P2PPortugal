@@ -21,6 +21,26 @@
         overflow-x: hidden;
       }
 
+      nav {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+      }
+
+      nav a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        transition: background-color 0.3s;
+      }
+
+      nav a:hover {
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+
       header {
         text-align: center;
         padding: 2rem 1rem 1rem;
@@ -84,6 +104,7 @@
       .cta a {
         display: inline-flex;
         align-items: center;
+		width: 250px;
         padding: 0.75rem 1.5rem;
         background-color: #FF0000;
         color: white;
@@ -144,6 +165,10 @@
     </style>
   </head>
   <body>
+    <nav>
+      <a href="artigos.html" style="color: #FF0000;">Artigos</a>
+    </nav>
+
     <header>
       <img src="./assets/img/logo.png" alt="P2P Portugal" class="logo" />
       <h1>Prepara-te para explorar o mundo dos investimentos com confiança e clareza</h1>
