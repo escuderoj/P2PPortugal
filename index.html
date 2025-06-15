@@ -110,7 +110,7 @@
       }
 
       .cta a {
-        display: inline-flex;
+        display: inline-block;
         align-items: center;
 		width: 250px;
         padding: 0.75rem 1.5rem;
@@ -122,7 +122,11 @@
         font-size: 1rem;
         transition: background-color 0.3s;
       }
-
+	  
+	  .cta a img,
+	  .promotions-link img {
+	    vertical-align: middle;
+	  }
       .cta a:hover {
         background-color: #cc0000;
       }
@@ -211,16 +215,22 @@
       </div>
     </div>
 
-    <div class="cta">
-      <a href="https://www.youtube.com/@P2PPortugal?sub_confirmation=1" target="_blank" rel="noopener noreferrer">
-        <img src="./assets/img/youtube-icon.png" alt="YouTube" />
-        Subscreve o nosso canal!
-      </a>
-      <br /><br />
-      <a href="plataformas.html" class="promotions-link">Plataformas e Campanhas</a>
+	<div class="cta">
+	  <a href="https://www.youtube.com/@P2PPortugal?sub_confirmation=1" target="_blank" rel="noopener noreferrer">
+		<img src="./assets/img/youtube-icon.png" alt="YouTube" />
+		Subscreve o nosso canal!
+	  </a>
 	  <br /><br />
-	  <a href="artigos.html" class="promotions-link">Artigos e Notícias</a>
-    </div>
+	  <a href="plataformas.html" class="promotions-link">
+		<img src="./assets/img/platforms-icon.png" alt="Plataformas" />
+		Plataformas e Campanhas
+	  </a>
+	  <br /><br />
+	  <a href="artigos.html" class="promotions-link">
+		<img src="./assets/img/news-icon.png" alt="Artigos" />
+		Artigos e Notícias
+	  </a>
+	</div>
 
     <footer>
       &copy; 2025 P2P Portugal · Contacto: <a href="mailto:p2pportugaloficial@gmail.com" style="color: #bbbbbb">p2pportugaloficial@gmail.com</a>
