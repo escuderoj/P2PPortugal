@@ -123,19 +123,32 @@
         transition: background-color 0.3s;
       }
 	  
-	  .cta a img,
-	  .promotions-link img {
-	    vertical-align: middle;
+	  .cta a {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		width: 250px;
+		padding: 0.75rem 1.5rem;
+		background-color: #FF0000;
+		color: white;
+		border-radius: 6px;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 1rem;
+		transition: background-color 0.3s;
+	}
+
+	  .cta a:hover {
+		background-color: #cc0000;
 	  }
-      .cta a:hover {
-        background-color: #cc0000;
-      }
 
-      .cta img {
-        height: 24px;
-        margin-right: 0.5rem;
-      }
-
+	  .cta img {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		object-fit: cover;
+	  }
+	  
       .promotions-link {
         display: inline-block;
         margin-top: 1rem;
