@@ -12,7 +12,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="A referência em investimentos P2P, crowdlending e crowdfunding em Portugal">
-    <title>P2P Portugal – Investimentos em Crowdlending e Crowdfunding</title>
+    <title>P2P Portugal – Investimentos em empréstimos P2P</title>
     <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon" />
     <style>
       body {
@@ -91,8 +91,14 @@
       }
 
       .carousel-track a img {
-        height: 60px;
-        object-fit: contain;
+	    width: 120px;           /* largura fixa */
+	    height: 60px;           /* altura fixa */
+	    object-fit: contain;    /* mantém proporção sem cortar */
+	    background: #fff;       /* opcional: fundo branco para logos transparentes */
+	    border-radius: 8px;
+	    padding: 8px;           /* opcional: espaço interno para logos menores */
+	    box-sizing: border-box; /* garante que padding não aumenta o tamanho */
+	    display: block;
       }
 
       @keyframes scroll {
@@ -193,6 +199,7 @@
         }
 
         .carousel-track a img {
+		  width: 80px;
           height: 40px;
         }
 
@@ -201,6 +208,23 @@
           padding: 0.5rem 1rem;
         }
       }
+	  
+	  .subtitle-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 20px;
+	  }
+
+	  .subtitle-icon {
+		width: 600px;
+		height: auto;
+		border-radius: 5px;
+	  }
+
+	  .subtitle {
+		margin: 0;
+	  }
     </style>
   </head>
   <!-- Google tag (gtag.js) -->
@@ -218,14 +242,15 @@
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->  
  
-    <nav>
-      <a href="artigos.html" style="color: #FF0000;">Artigos</a>
-    </nav>
-
     <header>
       <img src="./assets/img/logo.png" alt="P2P Portugal" class="logo" />
-      <h1>Prepara-te para explorar o mundo dos investimentos com confiança e clareza</h1>
-      <p class="subtitle">Com destaque para o espaço dos empréstimos P2P</p>
+      <h1>Descobre as Melhores Plataformas de Investimento P2P em Portugal</h1>
+      <p class="subtitle">No p2pportugal.com, reunimos análises, dicas e campanhas exclusivas para quem quer investir em crédito P2P.</p>
+	  <br/>
+	  <div class="subtitle-container" style="justify-content: center;">
+	    <img src="./assets/img/p2p.png" alt="Imagem Empréstimos P2P" class="subtitle-icon">
+	  </div>
+	   <p class="subtitle">Encontre as melhores oportunidades, compare plataformas e maximize os seus ganhos com segurança e eficiência.</p>
     </header>
 
     <div class="carousel">
