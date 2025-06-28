@@ -41,7 +41,7 @@
         padding: 1rem 1.5rem;
         margin-bottom: 1.5rem;
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         gap: 1rem;
         max-width: 800px;
         margin-left: auto;
@@ -49,13 +49,13 @@
       }
 
       .platform img {
-        width: 60px;
-        height: 60px;
+        width: 100px;
+        height: 100px;
         min-width: 60px;
         border-radius: 50%;
         object-fit: contain;
-        background-color: #00b894; /* fundo verde do logo */
-        padding: 4px;
+        background-color: #ffffff;
+        padding: 8px;
         box-sizing: border-box;
         transition: transform 0.2s ease;
         cursor: pointer;
@@ -102,8 +102,14 @@
       .promotion {
         font-size: 1rem;
         margin: 0;
-        color: #ffdd57;
+        color: #ffffff;
       }
+
+	  .description {
+		font-size: 0.9rem;
+		margin-top: 0.5rem;
+		color: white;
+	  }
 
       .coming-soon {
         max-width: 800px;
@@ -130,15 +136,24 @@
       @media (max-width: 600px) {
         .platform {
           flex-direction: column;
-          align-items: flex-start;
+          align-items: center;
         }
 
         .platform img {
           width: 50px;
           height: 50px;
+		  padding: 6px;
         }
       }
-	  	  
+      
+	  .logo {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+		display: block;
+		margin: 0 auto;
+      } 
     </style>
 	<script type="application/ld+json">
 	{
@@ -242,96 +257,113 @@
 	<!-- End Google Tag Manager (noscript) -->  
 	
     <h1>P2P Portugal</h1>
+	<img src="./assets/img/logo.png" alt="Logo P2P Portugal" class="logo" loading="lazy"/>
     <h2>Plataformas P2P: Promoções e Campanhas (Referral Codes)</h2>
     <p class="last-update">Última atualização: Junho 2025</p>
     
     <div class="platform">
+		<div class="platform-content">
+			<p><b>Notas:</b></p>
+			<p>1) As plataformas estão listadas por <b>ordem alfabética</b> (e não por qualquer outro critério).</p>
+			<p>2) Para usufruir dos bonus e promoções descritas, deverás usar os <b>links que existem no nome (e no logo)</b> de cada uma das plataformas.</p>
+		</div>
+	</div>
+	<div class="platform">
       <a href="https://bondora.com/ref/BO59K5451A" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Bondora">
-        <img src="./assets/img/logos/bondora.png" alt="Bondora referral code" />
+        <img src="./assets/img/logos/bondora.png" alt="Bondora referral code" loading="lazy"/>
       </a>
       <div class="platform-content">
         <h3 class="platform-title"><a href="https://bondora.com/ref/BO59K5451A" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Bondora" class="platform-name">Bondora</a></h3>
-        <p class="promotion">25€ de boas-vindas + 25€ após investimento de 500€+</p>
+		<p class="promotion"><b>Promoção: </b>25€ de boas-vindas + 25€ após investimento de 500€+ (que deverá ser mantido por 90 dias)</p>
+		<p class="description"><b>Sobre: </b>A Bondora é uma plataforma intuitiva e adequada para quem está a começar, que automatiza o investimento em múltiplos empréstimos. A Bondora oferece um retorno anualizado de 6%, com rendimentos creditados diariamente, sem valores mínimos ou máximos de investimento, e permite levantamentos imediatos, garantindo máxima flexibilidade.</p>
       </div>
     </div>
 
     <div class="platform">
       <a href="https://debitum.investments/es/r/INHXT" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Debitum">
-        <img src="./assets/img/logos/debitum.png" alt="Debitum referral code" />
+        <img src="./assets/img/logos/debitum.png" alt="Debitum referral code" loading="lazy"/>
       </a>
       <div class="platform-content">
         <h3 class="platform-title"><a href="https://debitum.investments/es/r/INHXT" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Debitum" class="platform-name">Debitum</a></h3>
-        <p class="promotion">25€* (* para um investimento de 1.000€)</p>
+        <p class="promotion"><b>Promoção: </b>25€* (*para um investimento de 1.000€. Para mais detalhes, consultar <a href="https://debitum.investments/en/invite-friends" target="_blank" rel="noopener noreferrer nofollow" title="Debitum Investments invite-friends" style="color: white; text-decoration: none; font-style: italic;">aqui</a> )</p>
+		<p class="description"><b>Sobre: </b>A Debitum Investments é uma plataforma marketplace regulada e licenciada, especializada em empréstimos empresariais (P2B). Oferece uma taxa média de retorno na ordem dos 12%, focando-se em empréstimos com garantias (ABS) e análise de risco criteriosa</p>
       </div>
     </div>
 
     <div class="platform">
       <a href="https://getincome.com/register?ref_code=0O674X" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Income">
-        <img src="./assets/img/logos/income.png" alt="Income referral code" />
+        <img src="./assets/img/logos/income.png" alt="Income referral code" loading="lazy"/>
       </a>
       <div class="platform-content">
         <h3 class="platform-title"><a href="https://getincome.com/register?ref_code=0O674X" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Income" class="platform-name">Income</a></h3>
-        <p class="promotion">10€ de boas-vindas</p>
+        <p class="promotion"><b>Promoção: </b>10€ de boas-vindas</p>
+		<p class="description"><b>Sobre: </b>A Income é uma plataforma regulada focada em empréstimos com proteção adicional para o investidor, através do seu inovador modelo de “Skin in the Game” e estrutura de garantias. Opera principalmente na Europa de Leste, com retornos a rondar os 12%, sendo uma opção interessante para quem valoriza segurança e diversificação.</p>
       </div>
     </div>
 
     <div class="platform">
       <a href="https://app.maclear.ch/en/registration?ref=DD1E7S" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Maclear">
-        <img src="./assets/img/logos/maclear.png" alt="Maclear referral code" />
+        <img src="./assets/img/logos/maclear.png" alt="Maclear referral code" loading="lazy"/>
       </a>
       <div class="platform-content">
         <h3 class="platform-title"><a href="https://app.maclear.ch/en/registration?ref=DD1E7S" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Maclear" class="platform-name">Maclear</a></h3>
-        <p class="promotion">15€ + 3% dos investimentos realizados durante os primeiros 90 dias</p>
+        <p class="promotion"><b>Promoção: </b>15€ + 3% dos investimentos realizados durante os primeiros 90 dias</p>
+		<p class="description"><b>Sobre: </b>A Maclear é uma plataforma regulada com sede na Suíça, especializada em empréstimos empresariais na Europa. Focada na transparência e na qualidade do crédito, permite investir de forma simples em ativos com garantias (colaterais). Os retornos típicos rondam os 15%.</p>
       </div>
     </div>
 
     <div class="platform">
       <a href="https://www.mintos.com/es/l/ref/I0Z2X2" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Mintos">
-        <img src="./assets/img/logos/mintos.png" alt="Mintos" />
+        <img src="./assets/img/logos/mintos.png" alt="Mintos" loading="lazy"/>
       </a>
       <div class="platform-content">
         <h3 class="platform-title"><a href="https://www.mintos.com/es/l/ref/I0Z2X2" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Mintos" class="platform-name">Mintos</a></h3>
-        <p class="promotion">25€ + 1% dos investimentos realizados durante os primeiros 60 dias (mínimo de 1.000€)</p>
+        <p class="promotion"><b>Promoção: </b>25€ + 1% dos investimentos realizados durante os primeiros 60 dias (mínimo de 1.000€)</p>
+		<p class="description"><b>Sobre: </b>A Mintos é uma plataforma veterana, regulada e licenciada, que funciona como um marketplace de empréstimos. Oferece uma ampla gama de ativos, incluindo créditos ao consumo e empresariais, bem como oportunidades de investimento em imobiliário, obrigações (bonds), ETFs, entre outros.</p>
       </div>
     </div>
 
     <div class="platform">
       <a href="https://smartsaver.monefit.com/en/referral/link?code=6dqz3aom" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Monefit">
-        <img src="./assets/img/logos/monefit.png" alt="Monefit referral code" />
+        <img src="./assets/img/logos/monefit.png" alt="Monefit referral code" loading="lazy"/>
       </a>
       <div class="platform-content">
         <h3 class="platform-title"><a href="https://smartsaver.monefit.com/en/referral/link?code=6dqz3aom" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Monefit" class="platform-name">Monefit</a></h3>
-        <p class="promotion">0,5% dos investimentos realizados durante os primeiros 90 dias</p>
+        <p class="promotion"><b>Promoção: </b>0,5% dos investimentos realizados durante os primeiros 90 dias</p>
+		<p class="description"><b>Sobre: </b>A Monefit, à semelhança da Bondora, é uma plataforma intuitiva e adequada para quem está a começar, que automatiza o investimento em múltiplos empréstimos. A Monefit oferece um retorno anualizado que pode ir até 10,52%, dependendo do compromisso estabelecido, com rendimentos creditados diariamente, sem valores mínimos ou máximos de investimento.</p>
       </div>
     </div>
 
     <div class="platform">
       <a href="https://nectaro.eu/registration/individual/?referralCode=E6F9D" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Nectaro">
-        <img src="./assets/img/logos/nectaro.png" alt="Nectaro referral code" />
+        <img src="./assets/img/logos/nectaro.png" alt="Nectaro referral code" loading="lazy"/>
       </a>
       <div class="platform-content">
         <h3 class="platform-title"><a href="https://nectaro.eu/registration/individual/?referralCode=E6F9D" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Nectaro" class="platform-name">Nectaro</a></h3>
-        <p class="promotion">1% dos investimentos realizados durante os primeiros 60 dias (mínimo de 300€)</p>
+        <p class="promotion"><b>Promoção: </b>1% dos investimentos realizados durante os primeiros 60 dias (mínimo de 300€)</p>
+		<p class="description"><b>Sobre: </b>A Nectaro é uma plataforma regulada e orientada para o investimento em empréstimos com garantia de recompra, operando sobretudo em mercados da Europa Central e de Leste. Com uma equipa experiente, é uma opção acessível e fiável para diversificar o portefólio.</p>
       </div>
     </div>
 
     <div class="platform">
       <a href="https://ventus.energy/join/ODLtQPbj" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Ventus">
-        <img src="./assets/img/logos/ventus.png" alt="Ventus referral code" />
+        <img src="./assets/img/logos/ventus.png" alt="Ventus referral code" loading="lazy"/>
       </a>
       <div class="platform-content">
         <h3 class="platform-title"><a href="https://ventus.energy/join/ODLtQPbj" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Ventus" class="platform-name">Ventus</a></h3>
-        <p class="promotion">1% dos investimentos realizados durante os primeiros 60 dias (mínimo de 1.000€)</p>
+        <p class="promotion"><b>Promoção: </b>1% dos investimentos realizados durante os primeiros 60 dias (mínimo de 1.000€)</p>
+		<p class="description"><b>Sobre: </b>A Ventus é uma plataforma inovadora que liga investidores a projetos de energia renovável na Europa, principalmente nos países bálticos. Através de uma estrutura de financiamento sustentável e transparente, permite investir diretamente na transição energética, com retornos previsíveis, na ordem dos 18%, e impacto ambiental positivo.</p>
       </div>
     </div>
 
     <div class="platform">
       <a href="https://app.8lends.io/?referral=TyOS6P" target="_blank" rel="noopener noreferrer nofollow" title="Campanha 8Lends">
-        <img src="./assets/img/logos/8lends.png" alt="8Lends referral code" />
+        <img src="./assets/img/logos/8lends.png" alt="8Lends referral code" loading="lazy"/>
       </a>
       <div class="platform-content">
         <h3 class="platform-title"><a href="https://app.8lends.io/?referral=TyOS6P" target="_blank" rel="noopener noreferrer nofollow" title="Campanha 8Lends" class="platform-name">8Lends</a></h3>
-        <p class="promotion">30 USDCs + 6% dos investimentos realizados durante os primeiros 90 dias</p>
+        <p class="promotion"><b>Promoção: </b>30 USDCs + 6% dos investimentos realizados durante os primeiros 90 dias</p>
+		<p class="description"><b>Sobre: </b>A 8Lends é uma plataforma de investimento semelhante à Maclear, mas com enfoque no universo Web3/DeFi. Os investimentos são realizados em USDCs, através da blockchain, oferecendo uma abordagem mais descentralizada e transparente. Os retornos rondam os 23%.</p>
       </div>
     </div>
 
