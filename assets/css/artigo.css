@@ -35,6 +35,12 @@ main {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+@media (max-width: 768px) {
+  main {
+    max-width: 600px;
+  }
+}
+
 /* Títulos */
 h1 {
   font-size: 1.5rem;
