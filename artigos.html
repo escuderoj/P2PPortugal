@@ -1,248 +1,265 @@
 <!DOCTYPE html>
 <html lang="pt-pt">
-  <head>
-	<!-- Google Tag Manager -->
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-53ZCV2K4');</script>
-	<!-- End Google Tag Manager -->  
-	
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Artigos, notícias e conteúdos sobre investimentos em empréstimos P2P, e produtos financeiros em geral">
-    <title>Artigos e Notícias P2P: Análises e dicas | P2P Portugal</title>
-    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon" />
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background: linear-gradient(to bottom right, #001f3f, #0074D9);
-        color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        min-height: 100vh;
-      }
+	<head>
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-53ZCV2K4');</script>
+		<!-- End Google Tag Manager -->
+		
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="description" content="Artigos, notícias e conteúdos sobre investimentos em empréstimos P2P, e produtos financeiros em geral">
+		<title>Artigos e Notícias P2P: Análises e dicas | P2P Portugal</title>
+		<link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon"/>
+		<style>
+			body {
+				margin: 0;
+				padding: 0 0.5rem;
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+				background: linear-gradient(to bottom right, #001f3f, #0074D9);
+				color: white;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				min-height: 100vh;
+			}
 
-      header {
-        text-align: center;
-        padding: 2rem 1rem 1rem;
-      }
+			header {
+				text-align: center;
+			}
+			
+			h1 {
+				font-size: 1.5rem;
+			}
 
-      header h1 {
-        font-size: 2rem;
-        margin-bottom: 0.5rem;
-      }
+			h2 {
+				color: #ffcc00;
+				margin-top: 1rem;
+			}
+			.article-list {
+				max-width: 800px;
+				width: 100%;
+				padding: 1rem;
+				display: flex;
+				flex-direction: column;
+				gap: 1.5rem;
+			}
 
-      .article-list {
-        max-width: 800px;
-        width: 100%;
-        padding: 1rem;
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-      }
+			.article-item {
+				background-color: rgba(255, 255, 255, 0.1);
+				padding: 1rem;
+				border-radius: 8px;
+			}
 
-      .article-item {
-        background-color: rgba(255, 255, 255, 0.1);
-        padding: 1rem;
-        border-radius: 8px;
-      }
-
-	  .article-item h2,
-	  .article-item header h2 {
-		margin: 0 0 0.5rem;
-		font-size: 1.2rem;
-	  }
+			.article-item h2,
+			.article-item header h2 {
+				margin: 0 0 0.5rem;
+				font-size: 1.2rem;
+			}
 
 
-      .article-item p {
-        margin: 0 0 0.5rem;
-        color: #dddddd;
-      }
-
-      .article-item a {
-        color: #00d8ff;
-        text-decoration: none;
-      }
-
-      .article-item a:hover {
-        text-decoration: underline;
-      }
-
-      a.back-link {
-        display: block;
-        max-width: 800px;
-        margin: 2rem auto 0;
-        color: white;
-        text-decoration: underline;
-        text-align: center;
-      }
+			.article-item p {
+				margin: 0 0 0.5rem;
+				color: #dddddd;
+			}
+			
+			.article-img {
+				width: 100%;
+				height: 200px;
+				object-fit: cover;
+				border-radius: 8px;
+				margin-bottom: 1rem;
+			}
+					
+			img {
+				max-width: 100%;
+				height: auto;
+				display: block;
+			}
 	  
-      a.back-link:hover {
-        color: #ffd700;
-      }
-	  
-      footer {
-        margin-top: 3rem;
-        text-align: center;
-        padding: 1rem 0;
-        font-size: 0.9rem;
-        color: #bbbbbb;
-      }
-	  
-	  img {
-		max-width: 100%;
-		height: auto;
-		display: block;
-	  }
-	  
-	  .logo {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        object-fit: cover;
-		display: block;
-		margin: 0 auto;
-      } 
+			.logo {
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				object-fit: cover;
+				display: block;
+				margin: 0 auto;
+				padding: 2rem;
+			}
+			
+			/* Links gerais */
+			a {
+				color: white;
+				text-decoration: none;
+				transition: color 0.3s ease;
+			}
+
+			a:hover,
+			a:focus {
+				color: #ffcc00;
+			}
+
+			/* Link de navegação inferior */
+			nav.back-link-container {
+				margin: 2rem 0;
+				width: 100%;
+				max-width: 800px;
+				padding-left: 1.5rem;
+			}
+
+			a.back-link {
+				display: block;
+				text-align: center;
+				font-weight: bold;
+			}
+			
+			/* Rodapé */
+			footer {
+				margin-top: auto;
+				padding: 1rem 0;
+				text-align: center;
+				font-size: 0.9rem;
+				font-weight: bold;
+				color: #ffcc00;
+			}
+
+			footer a {
+				color: #ffcc00;
+				text-decoration: none;
+			}
+
+			footer a:hover,
+			footer a:focus {
+				color: white;
+			}
+			
+			/* Responsividade */
+			@media (max-width: 600px) {
+			  .article-img {
+				height: 150px;
+			  }
+			}
+			@media (max-width: 400px) {
+			  .page-header h1 {
+				font-size: 1.25rem;
+			  }
+			  .page-header h2 {
+				font-size: 1rem;
+			  }
+			}
     </style>
-  </head>
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-7V0VLBQ86L"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+	</head>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7V0VLBQ86L"/>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
 
-	  gtag('config', 'G-7V0VLBQ86L');
-	</script>
-  <body>
-  	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-53ZCV2K4"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->  
-	
-    <header>
-      <h1>Artigos e conteúdos sobre Investimentos</h1>
-	  <img src="./assets/img/logo.png" alt="Logo P2P Portugal" class="logo" loading="lazy"/>
-	  <h2>em empréstimos P2P, mas não só...</h2>
-    </header>
-	
-    <div class="article-list">
-	
-	<article itemscope itemtype="https://schema.org/BlogPosting" class="article-item">
-	
-	  <img src="./assets/img/artigos/comparativaprodutosfinanceiros.jpg"
-	   alt="Comparação entre produtos financeiros, incluindo P2P Lending, em termos de segurança e risco"
-	   style="width:100%; max-height:200px; object-fit:cover; border-radius:8px; margin-bottom:1rem;"
-	   loading="lazy"
-	   itemprop="image" />
-	   
-	  <h2 itemprop="headline">Comparação entre Produtos Financeiros: Segurança, Risco e Potencial de Retorno</h2>
-	  <meta itemprop="datePublished" content="2025-06-01" />
-	  <meta itemprop="author" content="P2P Portugal" />
-
-	  <p itemprop="description">Análise comparativa entre investimentos tradicionais como depósitos a prazo e certificados de aforro, face ao crowdlending e outras formas de P2P lending. Avaliação de risco, retorno e adequação ao investidor português.</p>
-
-	  <a href="comparacao.html" itemprop="url">Ler artigo</a>
-	  
-	</article>
-
-      <div class="article-item">
-	    <img src="./assets/img/artigos/podcastInvestimentosP2P.jpg" alt="Podcast sobre Investimentos P2P" style="width:100%; max-height:200px; object-fit:cover; border-radius:8px; margin-bottom:1rem; loading="lazy">
-        <h2>Contas Poupança: Podcast sobre Investimentos P2P</h2>
-        <p>Podcast que explica o que são os investimentos P2P, os seus riscos e potenciais rendimentos, com linguagem simples e acessível.</p>
-        <a href="https://contaspoupanca.pt/podcast/2025-02-03-o-que-sao-os-investimentos-p2p-quanto-posso-ganhar-e-quais-os-riscos--24ffd97e" target="_blank" rel="noopener noreferrer">Ler artigo | Ouvir episódio</a>
-      </div>
-
-      <div class="article-item">
-        <img src="./assets/img/artigos/oquesabersobreP2PLending.jpg" alt="O que saber sobre P2P lending" style="width:100%; max-height:200px; object-fit:cover; border-radius:8px; margin-bottom:1rem; loading="lazy">
-		<h2>Dr. Finanças: O que saber sobre P2P lending</h2>
-        <p>Artigo introdutório que cobre os principais conceitos do peer-to-peer lending e o seu funcionamento em Portugal.</p>
-        <a href="https://www.doutorfinancas.pt/investimentos/o-que-saber-sobre-plataformas-de-investimento-peer-to-peer/" target="_blank" rel="noopener noreferrer">Ler artigo</a>
-      </div>
-	  
-      <div class="article-item">
-		<img src="./assets/img/artigos/crowdlending.jpg" alt="O que é Crowdlending?" style="width:100%; max-height:200px; object-fit:cover; border-radius:8px; margin-bottom:1rem; loading="lazy">
-        <h2>Maclear: O que é Crowdlending?</h2>
-        <p>Artigo da plataforma Maclear explicando o conceito de crowdlending e os seus benefícios para investidores e empresas.</p>
-        <a href="https://www.maclear.ch/what-is-crowdlending" target="_blank" rel="noopener noreferrer">Ler artigo</a>
-      </div>
-	  
-      <div class="article-item">
-		<img src="./assets/img/artigos/certificadosdeaforro.jpg" alt="Certificados de Aforro" style="width:100%; max-height:200px; object-fit:cover; border-radius:8px; margin-bottom:1rem; loading="lazy">
-        <h2>POD Poupar: Certificados de Aforro (Maio 2025)</h2>
-        <p>Desde a comercialização da série F, os Certificados de Aforro tornaram-se pouco interessantes. As sucessivas descidas da taxa E3M ao longo de 2025 agravaram ainda mais esta situação. Será que é altura de olhar para alternativas de investimento, como o P2P, para melhorar os rendimentos?</p>
-        <a href="https://www.deco.proteste.pt/investe/depositos-certificados/certificados-aforro/noticias/2025/05/ainda-vale-a-pena-aplicar-em-certificados-de-aforro" target="_blank" rel="noopener noreferrer">Ler artigo | Ver vídeo</a>
-      </div>
-
-      <div class="article-item">
-		<img src="./assets/img/artigos/certificadosdeaforro2.jpg" alt="Certificados de Aforro - VOCÊ ESTÁ A PERDER DINHEIRO" style="width:100%; max-height:200px; object-fit:cover; border-radius:8px; margin-bottom:1rem; loading="lazy">
-        <h2>Cor do Dinheiro (Pé de Meia): Certificados de Aforro - VOCÊ ESTÁ A PERDER DINHEIRO (Junho 2025)</h2>
-        <p>A esta altura do campeonato, subscrever produtos de baixo risco, como certificados de aforro ou depósitos bancários, já não consegue cobrir a inflação. Será que os investimentos em P2P são a solução para quem procura melhores retornos com risco controlado?</p>
-        <a href="https://www.youtube.com/watch?v=fUfcaPc0Raw" target="_blank" rel="noopener noreferrer">Ver vídeo</a>
-      </div>
-
-      <div class="article-item">
-		<img src="./assets/img/artigos/RWAvsStocks.jpg" alt="Comparação entre investimentos P2P (ou RWA) e Ações" style="width:100%; max-height:200px; object-fit:cover; border-radius:8px; margin-bottom:1rem; loading="lazy">
-        <h2>8Lends: RWA vs Stocks: What Is Better for Making Money in 2025?</h2>
-        <p>Os mercados de capitais apresentam um nível significativo de risco, inclusive na vertente da dívida, que em muitos aspectos pode ser superior ao risco inerente aos empréstimos P2P, os quais, apesar de também terem vantagens e desvantagens, normalmente contam com garantias reais, como colaterais (ABS).</p>
-        <a href="https://www.youtube.com/watch?v=BGxTMaUInpg" target="_blank" rel="noopener noreferrer">Ver vídeo</a>
-      </div>
-	  
-      <div class="article-item">
-		<img src="./assets/img/artigos/certificadosdeaforro3.jpg" alt="Depósitos a Prazo e Certificados de Aforro - Vão Descer Ainda Mais! O QUE FAZER" style="width:100%; max-height:200px; object-fit:cover; border-radius:8px; margin-bottom:1rem; loading="lazy">
-        <h2>Cor do Dinheiro (Pé de Meia): Depósitos a Prazo e Certificados de Aforro - Vão Descer Ainda Mais! O QUE FAZER (Junho 2025)</h2>
-        <p>Não é novidade que as taxas dos depósitos a prazo e dos certificados de aforro estão em queda, mas tudo indica que vão descer mais... </p>
-        <a href="https://www.youtube.com/watch?v=MRfCui1lpGo" target="_blank" rel="noopener noreferrer">Ver vídeo</a>
-      </div>	
-
-	<article itemscope itemtype="https://schema.org/BlogPosting" class="article-item">
-	
-	  <img src="./assets/img/artigos/bancavsp2p.png"
-	   alt="Financiamento Bancário vs. Empréstimos P2P"
-	   style="width:100%; max-height:200px; object-fit:cover; border-radius:8px; margin-bottom:1rem;"
-	   loading="lazy"
-	   itemprop="image" />
-	   
-	  <h2 itemprop="headline">Financiamento Bancário vs. Empréstimos P2P</h2>
-	  <meta itemprop="datePublished" content="2025-06-20" />
-	  <meta itemprop="author" content="P2P Portugal" />
-
-	  <p itemprop="description">Descobre as principais diferenças entre o modelo bancário tradicional e o sistema de empréstimos P2P. Uma análise clara, prática e pensada para investidores portugueses.</p>
-
-	  <a href="bancavsp2p.html" itemprop="url">Ler artigo</a>
-	  
-	</article>
-
-	<article itemscope itemtype="https://schema.org/BlogPosting" class="article-item">
-	
-	  <img src="./assets/img/artigos/p2p2030.png"
-	   alt="Como será o mercado de empréstimos P2P em 2030?"
-	   style="width:100%; max-height:200px; object-fit:cover; border-radius:8px; margin-bottom:1rem;"
-	   loading="lazy"
-	   itemprop="image" />
-	   
-	  <h2 itemprop="headline">Como será o mercado de empréstimos P2P em 2030?</h2>
-	  <meta itemprop="datePublished" content="2025-06-23" />
-	  <meta itemprop="author" content="P2P Portugal" />
-
-	  <p itemprop="description">Prevê-se que o setor dos empréstimos P2P se consolide como uma alternativa regulamentada e promissora até ao final da década. Neste artigo abordamos as tendências que marcarão o futuro do crowdlending: maior transparência, tokenização, desafios de liquidez e o impacto da regulamentação europeia.</p>
-
-	  <a href="p2p2030.html" itemprop="url">Ler artigo</a>
-	  
-	</article>
-
-    </div>
-	
-    <a href="index.html" class="back-link">&larr; Voltar à página inicial</a>
-
-    <footer>
-      &copy; 2025 P2P Portugal · Contacto: <a href="mailto:p2pportugaloficial@gmail.com" style="color: #bbbbbb">p2pportugaloficial@gmail.com</a>
-    </footer>
-	
-  </body>
-</html>
+		  gtag('config', 'G-7V0VLBQ86L');
+		</script>
+		<body>
+			<!-- Google Tag Manager (noscript) -->
+			<noscript>
+				<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-53ZCV2K4" height="0" width="0" style="display:none;visibility:hidden"/>
+			</noscript>
+			<!-- End Google Tag Manager (noscript) -->
+			
+			<main>
+				<header>
+					<img src="./assets/img/logo.png" alt="Logo P2P Portugal" class="logo" loading="lazy"/>
+					<h1>Artigos e conteúdos sobre Investimentos</h1>
+					<h2>em empréstimos P2P, mas não só...</h2>
+				</header>
+			
+				<div class="article-list">
+					<article itemscope itemtype="https://schema.org/BlogPosting" class="article-item">
+						<img src="./assets/img/artigos/comparativaprodutosfinanceiros.jpg" alt="Comparação entre produtos financeiros, incluindo P2P Lending, em termos de segurança e risco" class="article-img" loading="lazy" itemprop="image"/>
+						<h2 itemprop="headline">Comparação entre Produtos Financeiros: Segurança, Risco e Potencial de Retorno</h2>
+						<meta itemprop="datePublished" content="2025-06-01"/>
+						<meta itemprop="author" content="P2P Portugal"/>
+						<p itemprop="description">Análise comparativa entre investimentos tradicionais como depósitos a prazo e certificados de aforro, face ao crowdlending e outras formas de P2P lending. Avaliação de risco, retorno e adequação ao investidor português.</p>
+						<a href="comparacao.html" itemprop="url">Ler artigo</a>
+					</article>
+					<div class="article-item">
+						<img src="./assets/img/artigos/podcastInvestimentosP2P.jpg" alt="Podcast sobre Investimentos P2P" class="article-img" loading="lazy" itemprop="image">
+						<h2>Contas Poupança: Podcast sobre Investimentos P2P</h2>
+						<p>Podcast que explica o que são os investimentos P2P, os seus riscos e potenciais rendimentos, com linguagem simples e acessível.</p>
+						<a href="https://contaspoupanca.pt/podcast/2025-02-03-o-que-sao-os-investimentos-p2p-quanto-posso-ganhar-e-quais-os-riscos--24ffd97e" target="_blank" rel="noopener noreferrer">Ler artigo | Ouvir episódio</a>
+					</div>
+					<div class="article-item">
+						<img src="./assets/img/artigos/oquesabersobreP2PLending.jpg" alt="O que saber sobre P2P lending" class="article-img" loading="lazy" itemprop="image">
+						<h2>Dr. Finanças: O que saber sobre P2P lending</h2>
+						<p>Artigo introdutório que cobre os principais conceitos do peer-to-peer lending e o seu funcionamento em Portugal.</p>
+						<a href="https://www.doutorfinancas.pt/investimentos/o-que-saber-sobre-plataformas-de-investimento-peer-to-peer/" target="_blank" rel="noopener noreferrer">Ler artigo</a>
+					</div>
+					<div class="article-item">
+						<img src="./assets/img/artigos/crowdlending.jpg" alt="O que é Crowdlending?" class="article-img" loading="lazy" itemprop="image">
+						<h2>Maclear: O que é Crowdlending?</h2>
+						<p>Artigo da plataforma Maclear explicando o conceito de crowdlending e os seus benefícios para investidores e empresas.</p>
+						<a href="https://www.maclear.ch/what-is-crowdlending" target="_blank" rel="noopener noreferrer">Ler artigo</a>
+					</div>
+					<div class="article-item">
+						<img src="./assets/img/artigos/certificadosdeaforro.jpg" alt="Certificados de Aforro" class="article-img" loading="lazy" itemprop="image">
+						<h2>POD Poupar: Certificados de Aforro (Maio 2025)</h2>
+						<p>Desde a comercialização da série F, os Certificados de Aforro tornaram-se pouco interessantes. As sucessivas descidas da taxa E3M ao longo de 2025 agravaram ainda mais esta situação. Será que é altura de olhar para alternativas de investimento, como o P2P, para melhorar os rendimentos?</p>
+						<a href="https://www.deco.proteste.pt/investe/depositos-certificados/certificados-aforro/noticias/2025/05/ainda-vale-a-pena-aplicar-em-certificados-de-aforro" target="_blank" rel="noopener noreferrer">Ler artigo | Ver vídeo</a>
+					</div>
+					<div class="article-item">
+						<img src="./assets/img/artigos/certificadosdeaforro2.jpg" alt="Certificados de Aforro - VOCÊ ESTÁ A PERDER DINHEIRO" class="article-img" loading="lazy" itemprop="image">
+						<h2>Cor do Dinheiro (Pé de Meia): Certificados de Aforro - VOCÊ ESTÁ A PERDER DINHEIRO (Junho 2025)</h2>
+						<p>A esta altura do campeonato, subscrever produtos de baixo risco, como certificados de aforro ou depósitos bancários, já não consegue cobrir a inflação. Será que os investimentos em P2P são a solução para quem procura melhores retornos com risco controlado?</p>
+						<a href="https://www.youtube.com/watch?v=fUfcaPc0Raw" target="_blank" rel="noopener noreferrer">Ver vídeo</a>
+					</div>
+					<div class="article-item">
+						<img src="./assets/img/artigos/RWAvsStocks.jpg" alt="Comparação entre investimentos P2P (ou RWA) e Ações" class="article-img" loading="lazy" itemprop="image">
+						<h2>8Lends: RWA vs Stocks: What Is Better for Making Money in 2025?</h2>
+						<p>Os mercados de capitais apresentam um nível significativo de risco, inclusive na vertente da dívida, que em muitos aspectos pode ser superior ao risco inerente aos empréstimos P2P, os quais, apesar de também terem vantagens e desvantagens, normalmente contam com garantias reais, como colaterais (ABS).</p>
+						<a href="https://www.youtube.com/watch?v=BGxTMaUInpg" target="_blank" rel="noopener noreferrer">Ver vídeo</a>
+					</div>
+					<div class="article-item">
+						<img src="./assets/img/artigos/certificadosdeaforro3.jpg" alt="Depósitos a Prazo e Certificados de Aforro - Vão Descer Ainda Mais! O QUE FAZER" class="article-img" loading="lazy" itemprop="image">
+						<h2>Cor do Dinheiro (Pé de Meia): Depósitos a Prazo e Certificados de Aforro - Vão Descer Ainda Mais! O QUE FAZER (Junho 2025)</h2>
+						<p>Não é novidade que as taxas dos depósitos a prazo e dos certificados de aforro estão em queda, mas tudo indica que vão descer mais... </p>
+						<a href="https://www.youtube.com/watch?v=MRfCui1lpGo" target="_blank" rel="noopener noreferrer">Ver vídeo</a>
+					</div>
+					<article itemscope itemtype="https://schema.org/BlogPosting" class="article-item">
+						<img src="./assets/img/artigos/bancavsp2p.png" alt="Financiamento Bancário vs. Empréstimos P2P" class="article-img" loading="lazy" itemprop="image"/>
+						<h2 itemprop="headline">Financiamento Bancário vs. Empréstimos P2P</h2>
+						<meta itemprop="datePublished" content="2025-06-20"/>
+						<meta itemprop="author" content="P2P Portugal"/>
+						<p itemprop="description">Descobre as principais diferenças entre o modelo bancário tradicional e o sistema de empréstimos P2P. Uma análise clara, prática e pensada para investidores portugueses.</p>
+						<a href="bancavsp2p.html" itemprop="url">Ler artigo</a>
+					</article>
+					<article itemscope itemtype="https://schema.org/BlogPosting" class="article-item">
+						<img src="./assets/img/artigos/p2p2030.png" alt="Como será o mercado de empréstimos P2P em 2030?" class="article-img" loading="lazy" itemprop="image"/>
+						<h2 itemprop="headline">Como será o mercado de empréstimos P2P em 2030?</h2>
+						<meta itemprop="datePublished" content="2025-06-23"/>
+						<meta itemprop="author" content="P2P Portugal"/>
+						<p itemprop="description">Prevê-se que o setor dos empréstimos P2P se consolide como uma alternativa regulamentada e promissora até ao final da década. Neste artigo abordamos as tendências que marcarão o futuro do crowdlending: maior transparência, tokenização, desafios de liquidez e o impacto da regulamentação europeia.</p>
+						<a href="p2p2030.html" itemprop="url">Ler artigo</a>
+					</article>
+					<article itemscope itemtype="https://schema.org/BlogPosting" class="article-item">
+						<img src="./assets/img/artigos/triangulo.png" alt="O eterno triángulo dos Investimentos" class="article-img" loading="lazy" itemprop="image"/>
+						<h2 itemprop="headline">O eterno triángulo dos Investimentos</h2>
+						<meta itemprop="datePublished" content="2025-06-29"/>
+						<meta itemprop="author" content="P2P Portugal"/>
+						<p itemprop="description">Neste artigo explicamos o conceito do 'Triângulo do Investimento': Uma ferramenta essencial para qualquer investidor. Entende a relação entre risco, retorno e tempo, e como este equilíbrio influencia todas as decisões financeiras, desde produtos seguros até opções mais arrojadas como os empréstimos P2P (ou os criptoativos).</p>
+						<a href="triangulo.html" itemprop="url">Ler artigo</a>
+					</article>
+				</div>
+			</main>	
+			
+			<nav class="back-link-container">
+				<a href="index.html" class="back-link" aria-label="Voltar à página inicial">&larr; Voltar à página inicial</a>
+			</nav>
+			
+			<footer>
+				&copy; 2025 P2P Portugal · Contacto: <a href="mailto:p2pportugaloficial@gmail.com">p2pportugaloficial@gmail.com</a>
+			</footer>
+			
+		</body>
+	</html>

@@ -15,229 +15,226 @@
     <title>Investimentos em empréstimos P2P | P2P Portugal</title>
     <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon" />
     <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background: linear-gradient(to bottom right, #001f3f, #0074D9);
-        color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-        overflow-x: hidden;
-		display: block;
-      }
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			background: linear-gradient(to bottom right, #001f3f, #0074D9);
+			color: white;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			min-height: 100vh;
+			overflow-x: hidden;
+			display: block;
+		}
 
-      nav {
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-      }
+		nav {
+			position: absolute;
+			top: 1rem;
+			right: 1rem;
+		}
 
-      nav a {
-        color: #ffffff;
-        text-decoration: none;
-        font-weight: bold;
-        padding: 0.5rem 1rem;
-        background-color: rgba(0, 0, 0, 0.2);
-        border-radius: 4px;
-        transition: background-color 0.3s;
-      }
+		nav a {
+			color: #ffffff;
+			text-decoration: none;
+			font-weight: bold;
+			padding: 0.5rem 1rem;
+			background-color: rgba(0, 0, 0, 0.2);
+			border-radius: 4px;
+			transition: background-color 0.3s;
+		}
 
-      nav a:hover {
-        background-color: rgba(0, 0, 0, 0.4);
-      }
+		nav a:hover {
+			background-color: rgba(0, 0, 0, 0.4);
+		}
 
-      header {
-        text-align: center;
-        padding: 2rem 1rem 1rem;
-      }
+		header {
+			text-align: center;
+			padding: 2rem 1rem 1rem;
+		}
 
-      header img.logo {
-        width: 160px;
-        height: 160px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 4px solid rgba(255, 255, 255, 0.4);
-      }
+		header img.logo {
+			width: 160px;
+			height: 160px;
+			border-radius: 50%;
+			object-fit: cover;
+			border: 4px solid rgba(255, 255, 255, 0.4);
+		}
 
-      h1 {
-        font-size: 2.5rem;
-        margin-top: 0.5rem;
-      }
+		h1 {
+			font-size: 2.5rem;
+			margin-top: 0.5rem;
+		}
 
-      p.subtitle {
-        font-size: 1.25rem;
-        margin-top: 0.5rem;
-        color: #dddddd;
-      }
+		p.subtitle {
+			font-size: 1.25rem;
+			margin-top: 0.5rem;
+			color: #dddddd;
+		}
 
-      .carousel {
-        width: 100vw;
-        max-width: 1200px;
-        overflow: hidden;
-        margin: 2rem auto;
-      }
+		.carousel {
+			width: 100vw;
+			max-width: 1200px;
+			overflow: hidden;
+			margin: 2rem auto;
+		}
 
-      .carousel-track {
-        display: flex;
-        gap: 3rem;
-        animation: scroll 30s linear infinite;
-      }
+		.carousel-track {
+			display: flex;
+			gap: 3rem;
+			animation: scroll 30s linear infinite;
+		}
 
-      .carousel-track img {
-        border-radius: 8px;
-      }
+		.carousel-track img {
+			border-radius: 8px;
+		}
 
-      .carousel-track a img {
-	    width: 120px;           /* largura fixa */
-	    height: 60px;           /* altura fixa */
-	    object-fit: contain;    /* mantém proporção sem cortar */
-	    background: #fff;       /* opcional: fundo branco para logos transparentes */
-	    border-radius: 8px;
-	    padding: 8px;           /* opcional: espaço interno para logos menores */
-	    box-sizing: border-box; /* garante que padding não aumenta o tamanho */
-	    display: block;
-      }
+		.carousel-track a img {
+			width: 120px;           /* largura fixa */
+			height: 60px;           /* altura fixa */
+			object-fit: contain;    /* mantém proporção sem cortar */
+			background: #fff;       /* opcional: fundo branco para logos transparentes */
+			border-radius: 8px;
+			padding: 8px;           /* opcional: espaço interno para logos menores */
+			box-sizing: border-box; /* garante que padding não aumenta o tamanho */
+			display: block;
+		}
 
-      @keyframes scroll {
-        0% {
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(-100%);
-        }
-      }
+		@keyframes scroll {
+			0% {
+				transform: translateX(0);
+			}
+			100% {
+				transform: translateX(-100%);
+			}
+		}
 
-      .cta {
-        margin-top: 2rem;
-        text-align: center;
-      }
+		.cta {
+			margin-top: 2rem;
+			text-align: center;
+		}
 
-      .cta a {
-        display: inline-block;
-        align-items: center;
-		width: 250px;
-        padding: 0.75rem 1.5rem;
-        background-color: #FF0000;
-        color: white;
-        border-radius: 6px;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 1rem;
-        transition: background-color 0.3s;
-      }
-	  
-	  .cta a {
-		display: inline-flex;
-		align-items: center;
-		gap: 0.5rem;
-		width: 250px;
-		padding: 0.75rem 1.5rem;
-		background-color: #FF0000;
-		color: white;
-		border-radius: 6px;
-		text-decoration: none;
-		font-weight: bold;
-		font-size: 1rem;
-		transition: background-color 0.3s;
-	}
+		.cta a {
+			display: inline-flex;
+			align-items: center;
+			gap: 0.5rem;
+			width: 250px;
+			padding: 0.75rem 1.5rem;
+			background-color: #FF0000;
+			color: white;
+			border-radius: 6px;
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 1rem;
+			transition: background-color 0.3s;
+		}
 
-	  .cta a:hover {
-		background-color: #cc0000;
-	  }
+		.cta a:hover {
+			background-color: #cc0000;
+		}
 
-	  .cta img {
-		width: 40px;
-		height: 40px;
-		border-radius: 50%;
-		object-fit: cover;
-	  }
-	  
-	  .cta-button {
-	    display: inline-flex;
-	    align-items: center;
-	    gap: 0.5rem;
-	    width: 280px;
-	    padding: 0.75rem 1rem;
-	    background-color: #FF0000;
-	    color: white;
-	    border-radius: 6px;
-	    text-decoration: none;
-	    font-weight: bold;
-	    font-size: 1rem;
-	    transition: background-color 0.3s;
-	  }
+		.cta img {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			object-fit: cover;
+		}
 
-	  .cta-button:hover {
-	    background-color: #cc0000;
-	  }
+		.cta-button {
+			display: inline-flex;
+			align-items: center;
+			gap: 0.5rem;
+			width: 280px;
+			padding: 0.75rem 1rem;
+			background-color: #FF0000;
+			color: white;
+			border-radius: 6px;
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 1rem;
+			transition: background-color 0.3s;
+		}
 
-	  .cta-button img {
-	    width: 45px;
-	    height: 45px;
-	    border-radius: 50%;
-	    background-color: #00b894;
-	    padding: 4px;
-	    box-sizing: border-box;
-	    object-fit: contain;
-	  }
+		.cta-button:hover {
+			background-color: #cc0000;
+		}
 
+		.cta-button img {
+			width: 45px;
+			height: 45px;
+			border-radius: 50%;
+			background-color: #00b894;
+			padding: 4px;
+			box-sizing: border-box;
+			object-fit: contain;
+		}
+		
+		/* Rodapé */
+		footer {
+			margin-top: 2rem;
+			padding: 1rem 0;
+			text-align: center;
+			font-size: 0.9rem;
+			font-weight: bold;
+			color: white;
+		}
 
-      footer {
-        margin-top: 5rem;
-        text-align: center;
-        padding: 1rem 0;
-        font-size: 0.9rem;
-        color: #bbbbbb;
-      }
+		footer a {
+			color: white;
+			text-decoration: none;
+		}
 
-      @media (max-width: 600px) {
-        h1 {
-          font-size: 1.8rem;
-        }
+		footer a:hover,
+		footer a:focus {
+			color: #ffcc00;
+		}
 
-        .carousel-track a img {
-		  width: 80px;
-          height: 40px;
-        }
+		@media (max-width: 600px) {
+		h1 {
+			font-size: 1.8rem;
+		}
 
-        .cta a {
-          font-size: 0.9rem;
-          padding: 0.5rem 1rem;
-        }
-      }
-	  
-	  .subtitle-container {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin-bottom: 20px;
-	  }
+		.carousel-track a img {
+			width: 80px;
+			height: 40px;
+		}
 
-	  .subtitle-icon {
-		width: 100%;
-		max-width: 600px;
-		height: auto;
-		border-radius: 5px;
-	  }
+		.cta a {
+			font-size: 0.9rem;
+			padding: 0.5rem 1rem;
+		}
+		}
 
-	  .subtitle {
-		margin: 0;
-	  }
+		.subtitle-container {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 20px;
+		}
+
+		.subtitle-icon {
+			width: 100%;
+			max-width: 600px;
+			height: auto;
+			border-radius: 5px;
+		}
+
+		.subtitle {
+			margin: 0;
+		}
     </style>
   </head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7V0VLBQ86L"></script>
-  <script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+	  <!-- Google tag (gtag.js) -->
+	  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7V0VLBQ86L"></script>
+	  <script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
 
-	  gtag('config', 'G-7V0VLBQ86L');
-  </script>  
+		  gtag('config', 'G-7V0VLBQ86L');
+	  </script>  
   <body>
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-53ZCV2K4"
@@ -291,8 +288,9 @@
 	  </a>
 	</div>
 
-    <footer>
-      &copy; 2025 P2P Portugal · Contacto: <a href="mailto:p2pportugaloficial@gmail.com" style="color: #bbbbbb">p2pportugaloficial@gmail.com</a>
-    </footer>
+	<footer>
+		&copy; 2025 P2P Portugal · Contacto: <a href="mailto:p2pportugaloficial@gmail.com">p2pportugaloficial@gmail.com</a>
+	</footer>
+
   </body>
 </html>
