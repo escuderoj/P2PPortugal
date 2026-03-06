@@ -18,270 +18,210 @@
 		<link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon"/>
 		
 		<style>
-      body {
-        margin: 0;
-        padding: 0 0.5rem;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background: linear-gradient(to bottom right, #001f3f, #0074D9);
-        color: white;
-        min-height: 100vh;
-      }
+		  body {
+			margin: 0;
+			padding: 0 0.5rem;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			background: linear-gradient(to bottom right, #001f3f, #0074D9);
+			color: white;
+			min-height: 100vh;
+		  }
 
-      h1, h2 {
-        text-align: center;
-        margin-bottom: 1.5rem;
-		font-size: 1.5rem; 
-      }
+		  h1, h2 {
+			text-align: center;
+			margin-bottom: 1.5rem;
+			font-size: 1.5rem; 
+		  }
 
-      .last-update {
-        text-align: center;
-        margin-bottom: 2rem;
-        color: #dddddd;
-      }
+		  .last-update {
+			text-align: center;
+			margin-bottom: 2rem;
+			color: #dddddd;
+		  }
 
-      .platform {
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 12px;
-        padding: 1rem 1.5rem;
-        margin-bottom: 1.5rem;
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        max-width: 800px;
-        margin-left: auto;
-        margin-right: auto;
-      }
+		  .platform {
+			background-color: rgba(255, 255, 255, 0.1);
+			border-radius: 12px;
+			padding: 1rem 1.5rem;
+			margin-bottom: 1.5rem;
+			display: flex;
+			align-items: center;
+			gap: 1rem;
+			max-width: 800px;
+			margin-left: auto;
+			margin-right: auto;
+		  }
 
-      .platform img {
-        width: 100px;
-        height: 100px;
-        min-width: 60px;
-        border-radius: 50%;
-        object-fit: contain;
-        background-color: #ffffff;
-        padding: 8px;
-        box-sizing: border-box;
-        transition: transform 0.2s ease;
-        cursor: pointer;
-      }
-
-      .platform img:hover {
-        transform: scale(1.05);
-      }
-
-      .platform-content {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-
-      .platform-name {
-        font-size: 1.2rem;
-        font-weight: bold;
-        margin: 0 0 0.3rem 0;
-        cursor: pointer;
-        color: #ffd700;
-        text-decoration: none;
-        transition: color 0.3s ease;
-      }
-
-      .platform-name:hover {
-        color: white;
-        
-      }
-	  
-	  .platform-title {
-	    text-align: left !important;
-	    margin: 0;
-	  }
-	  
-	  .platform h3 {
-	    margin: 0 0 0.3rem 0;
-	    font-size: 1.2rem;
-	    font-weight: bold;
-	    color: #ffd700;
-   	  }
-	  
-      .promotion {
-        font-size: 1rem;
-        margin: 0;
-        color: #ffffff;
-      }
-
-	  .description {
-		font-size: 0.9rem;
-		margin-top: 0.5rem;
-		color: white;
-	  }
-
-      .coming-soon {
-        max-width: 800px;
-        margin: 2rem auto;
-        font-size: 1.2rem;
-        font-style: italic;
-        text-align: center;
-        color: #ffcc00cc;
-      }
-
-      a.back-link {
-        display: block;
-        max-width: 800px;
-        margin: 2rem auto 0;
-        color: white;
-        text-align: center;
-		text-decoration: none;
-      }
-
-      a.back-link:hover {
-        color: #ffd700;
-      }
-
-      @media (max-width: 600px) {
-        .platform {
-          flex-direction: column;
-          align-items: center;
-        }
-
-        .platform img {
-          width: 60px;
-          height: 60px;
-		  padding: 6px;
-        }
-      }
-      
-		.logo {
+		  .platform img {
 			width: 100px;
 			height: 100px;
+			min-width: 60px;
 			border-radius: 50%;
-			object-fit: cover;
+			object-fit: contain;
+			background-color: #ffffff;
+			padding: 8px;
+			box-sizing: border-box;
+			transition: transform 0.2s ease;
+			cursor: pointer;
+		  }
+
+		  .platform img:hover {
+			transform: scale(1.05);
+		  }
+
+		  .platform-content {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		  }
+
+		  .platform-name {
+			font-size: 1.2rem;
+			font-weight: bold;
+			margin: 0 0 0.3rem 0;
+			cursor: pointer;
+			color: #ffd700;
+			text-decoration: none;
+			transition: color 0.3s ease;
+		  }
+
+		  .platform-name:hover {
+			color: white;
+			
+		  }
+		  
+		  .platform-title {
+			text-align: left !important;
+			margin: 0;
+		  }
+		  
+		  .platform h3 {
+			margin: 0 0 0.3rem 0;
+			font-size: 1.2rem;
+			font-weight: bold;
+			color: #ffd700;
+		  }
+		  
+		  .promotion {
+			font-size: 1rem;
+			margin: 0;
+			color: #ffffff;
+		  }
+
+		  .description {
+			font-size: 0.9rem;
+			margin-top: 0.5rem;
+			color: white;
+		  }
+
+		  .coming-soon {
+			max-width: 800px;
+			margin: 2rem auto;
+			font-size: 1.2rem;
+			font-style: italic;
+			text-align: center;
+			color: #ffcc00cc;
+		  }
+
+		  a.back-link {
 			display: block;
-			margin: 0 auto;
-			padding: 2rem;
-		}
-	  
-			/* Rodapé */
-			footer {
-				margin-top: 2rem;
-				padding: 1rem 0;
-				text-align: center;
-				font-size: 0.9rem;
-				font-weight: bold;
-				color: #ffcc00;
+			max-width: 800px;
+			margin: 2rem auto 0;
+			color: white;
+			text-align: center;
+			text-decoration: none;
+		  }
+
+		  a.back-link:hover {
+			color: #ffd700;
+		  }
+
+		  @media (max-width: 600px) {
+			.platform {
+			  flex-direction: column;
+			  align-items: center;
 			}
 
-			footer a {
-				color: #ffcc00;
-				text-decoration: none;
+			.platform img {
+			  width: 60px;
+			  height: 60px;
+			  padding: 6px;
 			}
+		  }
+		  
+			.logo {
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				object-fit: cover;
+				display: block;
+				margin: 0 auto;
+				padding: 2rem;
+			}
+		  
+				/* Rodapé */
+				footer {
+					margin-top: 2rem;
+					padding: 1rem 0;
+					text-align: center;
+					font-size: 0.9rem;
+					font-weight: bold;
+					color: #ffcc00;
+				}
 
-			footer a:hover,
-			footer a:focus {
-				color: white;
-			}
-    </style>
+				footer a {
+					color: #ffcc00;
+					text-decoration: none;
+				}
+
+				footer a:hover,
+				footer a:focus {
+					color: white;
+				}
+		</style>
+		
 		<script type="application/ld+json">
-	{
-	  "@context": "https://schema.org",
-	  "@type": "ItemList",
-	  "name": "Plataformas P2P com promoções",
-	  "url": "https://p2pportugal.com/plataformas",
-	  "itemListOrder": "http://schema.org/ItemListOrderAscending",
-	  "itemListElement": [
 		{
-		  "@type": "Offer",
-		  "name": "Bondora",
-		  "url": "https://bondora.com/ref/BO59K5451A",
-		  "description": "5€ de boas-vindas + 5€ após investimento de 50€+",
-		  "category": "P2P Lending",
-		  "priceCurrency": "EUR"
-		},
-		{
-		  "@type": "Offer",
-		  "name": "Debitum",
-		  "url": "https://debitum.investments/en/r/INHXT",
-		  "description": "25€* (* para um investimento de 1.000€)",
-		  "category": "P2P Lending",
-		  "priceCurrency": "EUR"
-		},
-		{
-		  "@type": "Offer",
-		  "name": "Devon",
-		  "url": "https://devon.eu/join/bQZg5wnU",
-		  "description": "1% dos investimentos realizados durante os primeiros 60 dias",
-		  "category": "Real Estate Crowdlending",
-		  "priceCurrency": "EUR"
-		},
-		{
-		  "@type": "Offer",
-		  "name": "FF Forest",
-		  "url": "https://ff-forest.com?referral_code=W9A31IDH",
-		  "description": "1% dos investimentos realizados durante os primeiros 180 dias",
-		  "category": "Sustainable Crowdlending",
-		  "priceCurrency": "EUR"
-		},
-		{
-		  "@type": "Offer",
-		  "name": "Income",
-		  "url": "https://getincome.com/register?ref_code=0O674X",
-		  "description": "10€ de boas-vindas",
-		  "category": "P2P Lending",
-		  "priceCurrency": "EUR"
-		},
-		{
-		  "@type": "Offer",
-		  "name": "Maclear",
-		  "url": "https://app.maclear.ch/en/registration?ref=DD1E7S",
-		  "description": "15€ + 3% dos investimentos realizados durante os primeiros 90 dias",
-		  "category": "P2P Lending",
-		  "priceCurrency": "EUR"
-		},
-		{
-		  "@type": "Offer",
-		  "name": "Mintos",
-		  "url": "https://www.mintos.com/es/l/ref/27X909",
-		  "description": "25€ + 1% dos investimentos realizados durante os primeiros 60 dias (mínimo de 1.000€)",
-		  "category": "P2P Lending",
-		  "priceCurrency": "EUR"
-		},
-		{
-		  "@type": "Offer",
-		  "name": "Monefit",
-		  "url": "https://smartsaver.monefit.com/en/referral/link?code=6dqz3aom",
-		  "description": "0,5% dos investimentos realizados durante os primeiros 90 dias",
-		  "category": "P2P Lending",
-		  "priceCurrency": "EUR"
-		},
-		{
-		  "@type": "Offer",
-		  "name": "Nectaro",
-		  "url": "https://nectaro.eu/registration/individual/?referralCode=E6F9D",
-		  "description": "1% dos investimentos realizados durante os primeiros 30 dias (mínimo de 300€)",
-		  "category": "P2P Lending",
-		  "priceCurrency": "EUR"
-		},
-		{
-		  "@type": "Offer",
-		  "name": "Ventus",
-		  "url": "https://ventus.energy/join/ODLtQPbj",
-		  "description": "1% dos investimentos realizados durante os primeiros 60 dias (mínimo de 1.000€)",
-		  "category": "Energy Crowdlending",
-		  "priceCurrency": "EUR"
-		},
-		{
-		  "@type": "Offer",
-		  "name": "8Lends",
-		  "url": "https://app.8lends.io/?referral=TyOS6P",
-		  "description": "30 USDCs + 6% dos investimentos realizados durante os primeiros 90 dias",
-		  "category": "P2P Lending",
-		  "priceCurrency": "USD"
+		  "@context": "https://schema.org",
+		  "@type": "ItemList",
+		  "name": "Plataformas P2P com promoções e bónus",
+		  "url": "https://p2pportugal.com",
+		  "itemListOrder": "https://schema.org/ItemListOrderAscending",
+		  "itemListElement": [
+			{ "@type": "ListItem", "position": 1, "item": { "@type": "Offer", "name": "8Lends", "url": "https://app.8lends.io/?referral=TyOS6P", "description": "30 USDCs + 6% bónus de investimento (90 dias)" }},
+			{ "@type": "ListItem", "position": 2, "item": { "@type": "Offer", "name": "Afranga", "url": "https://c.trackmytarget.com/?a=t1ae89&i=xhh9rg", "description": "0.5% cashback nos primeiros 90 dias" }},
+			{ "@type": "ListItem", "position": 3, "item": { "@type": "Offer", "name": "Asterra Estate", "url": "https://c.trackmytarget.com/?a=m570a0&i=xhh9rg", "description": "1% cashback nos primeiros 90 dias" }},
+			{ "@type": "ListItem", "position": 4, "item": { "@type": "Offer", "name": "Bondora", "url": "https://c.bondora.com/?a=qffgns&i=xhh9rg", "description": "5€ de boas-vindas + 5€ após investir 50€+" }},
+			{ "@type": "ListItem", "position": 5, "item": { "@type": "Offer", "name": "Crowdpear", "url": "https://c.crowdpear.com/?a=qe2645&i=xhh9rg", "description": "1% bónus de boas-vindas (90 dias)" }},
+			{ "@type": "ListItem", "position": 6, "item": { "@type": "Offer", "name": "Debitum", "url": "https://debitum.investments/en/r/INHXT", "description": "Bónus de 25€ para investimentos de 1.000€+" }},
+			{ "@type": "ListItem", "position": 7, "item": { "@type": "Offer", "name": "Devon", "url": "https://c.trackmytarget.com/?a=3s5bdf&i=xhh9rg", "description": "1% cashback nos primeiros 60 dias" }},
+			{ "@type": "ListItem", "position": 8, "item": { "@type": "Offer", "name": "FF Forest", "url": "https://c.trackmytarget.com/?a=g64b6e&i=xhh9rg", "description": "1% cashback nos primeiros 180 dias" }},
+			{ "@type": "ListItem", "position": 9, "item": { "@type": "Offer", "name": "Finforta", "url": "https://c.trackmytarget.com/?a=xhtmgn&i=xhh9rg", "description": "2% cashback no 1º Earn Project (até 1.000€)" }},
+			{ "@type": "ListItem", "position": 10, "item": { "@type": "Offer", "name": "Hive5", "url": "https://c.trackmytarget.com/?a=eevj74&i=xhh9rg", "description": "1% cashback nos primeiros 90 dias" }},
+			{ "@type": "ListItem", "position": 11, "item": { "@type": "Offer", "name": "Income", "url": "https://getincome.com/register?ref_code=0O674X", "description": "10€ de bónus de boas-vindas" }},
+			{ "@type": "ListItem", "position": 12, "item": { "@type": "Offer", "name": "Indemo", "url": "https://c.trackmytarget.com/?a=2cxoqk&i=xhh9rg", "description": "Até 5% cashback + 0.5% bónus registo" }},
+			{ "@type": "ListItem", "position": 13, "item": { "@type": "Offer", "name": "LANDE", "url": "https://c.trackmytarget.com/?a=lfw4z1&i=xhh9rg", "description": "1% cashback nos primeiros 30 dias" }},
+			{ "@type": "ListItem", "position": 14, "item": { "@type": "Offer", "name": "Lendiball", "url": "https://c.trackmytarget.com/?a=x80628&i=xhh9rg", "description": "Bónus variável nos primeiros 90 dias" }},
+			{ "@type": "ListItem", "position": 15, "item": { "@type": "Offer", "name": "Loanch", "url": "https://c.trackmytarget.com/?a=mt4qfe&i=xhh9rg", "description": "1% cashback nos primeiros 90 dias" }},
+			{ "@type": "ListItem", "position": 16, "item": { "@type": "Offer", "name": "Lonvest", "url": "https://c.trackmytarget.com/?a=m0c71f&i=xhh9rg", "description": "1% cashback nos primeiros 90 dias" }},
+			{ "@type": "ListItem", "position": 17, "item": { "@type": "Offer", "name": "Maclear", "url": "https://app.maclear.ch/en/registration?ref=DD1E7S", "description": "15€ + 3% cashback (90 dias)" }},
+			{ "@type": "ListItem", "position": 18, "item": { "@type": "Offer", "name": "Mintos", "url": "https://c.trackmytarget.com/?a=b3vza7&i=xhh9rg", "description": "25€ + 1% cashback (mín. 1.000€)" }},
+			{ "@type": "ListItem", "position": 19, "item": { "@type": "Offer", "name": "Modena", "url": "https://c.trackmytarget.com/?a=2c5l0q&i=xhh9rg", "description": "Bónus exclusivo para novos investidores" }},
+			{ "@type": "ListItem", "position": 20, "item": { "@type": "Offer", "name": "Monefit", "url": "https://c.trackmytarget.com/?a=v09036&i=xhh9rg", "description": "0.5% cashback nos primeiros 90 dias" }},
+			{ "@type": "ListItem", "position": 21, "item": { "@type": "Offer", "name": "Nectaro", "url": "https://c.trackmytarget.com/?a=i5pjek&i=xhh9rg", "description": "1% cashback (30 dias, mín. 300€)" }},
+			{ "@type": "ListItem", "position": 22, "item": { "@type": "Offer", "name": "Peerberry", "url": "https://c.peerberry.com/?a=wc58g4&i=xhh9rg", "description": "0.5% cashback nos primeiros 90 dias" }},
+			{ "@type": "ListItem", "position": 23, "item": { "@type": "Offer", "name": "Robocash", "url": "https://c.trackmytarget.com/?a=i33194&i=xhh9rg", "description": "1% bónus nos investimentos do primeiro mês" }},
+			{ "@type": "ListItem", "position": 24, "item": { "@type": "Offer", "name": "Scramble", "url": "https://c.trackmytarget.com/?a=9ueusw&i=xhh9rg", "description": "1% bónus nos investimentos (90 dias)" }},
+			{ "@type": "ListItem", "position": 25, "item": { "@type": "Offer", "name": "Triple Dragon", "url": "https://c.trackmytarget.com/?a=ehbmky&i=xhh9rg", "description": "2% cashback em projetos selecionados" }},
+			{ "@type": "ListItem", "position": 26, "item": { "@type": "Offer", "name": "Twino", "url": "https://c.trackmytarget.com/?a=4mnq1s&i=xhh9rg", "description": "Bónus de boas-vindas exclusivo via convite" }},
+			{ "@type": "ListItem", "position": 27, "item": { "@type": "Offer", "name": "Ventus", "url": "https://c.trackmytarget.com/?a=tq2cp4&i=xhh9rg", "description": "1% cashback (60 dias, mín. 1.000€)" }}
+		  ]
 		}
-	  ]
-	}
-	</script>
-	</head>
+		</script>
+		
 		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7V0VLBQ86L"/>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7V0VLBQ86L"></script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
@@ -289,17 +229,18 @@
 
 		  gtag('config', 'G-7V0VLBQ86L');
 		</script>
+		
+	</head>
 	<body>
 		<!-- Google Tag Manager (noscript) -->
-		<noscript>
-			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-53ZCV2K4" height="0" width="0" style="display:none;visibility:hidden"/>
-		</noscript>
-		<!-- End Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-53ZCV2K4"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->  
 		<header>
 			<img src="./assets/img/logo.png" alt="Logo P2P Portugal" class="logo" loading="lazy"/>
 			<h1>Plataformas P2P: Promoções e Campanhas (Referral Codes)</h1>
 		</header>
-		<p class="last-update">Última atualização: Janeiro 2026</p>
+		<p class="last-update">Última atualização: Março 2026</p>
 		<div class="platform">
 			<div class="platform-content">
 				<p>
@@ -309,160 +250,334 @@
 				<p>2) Para usufruir dos bónus e promoções descritas, deverás usar os <b>links que existem no nome (e no logo)</b> de cada uma das plataformas.</p>
 			</div>
 		</div>
-		<div class="platform">
-			<a href="https://bondora.com/ref/BO59K5451A" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Bondora">
-				<img src="./assets/img/logos/bondora.png" alt="Bondora referral code" loading="lazy"/>
-			</a>
-			<div class="platform-content">
-				<h3 class="platform-title">
-					<a href="https://bondora.com/ref/BO59K5451A" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Bondora" class="platform-name">Bondora</a>
-				</h3>
-				<p class="promotion">
-					<b>Promoção: </b>5€ de boas-vindas + 5€ após investimento de 50€+ (que deverá ser mantido por 90 dias)</p>
-				<p class="description">
-					<b>Sobre: </b>A Bondora é uma plataforma intuitiva e adequada para quem está a começar, que automatiza o investimento em múltiplos empréstimos. A Bondora oferece um retorno anualizado de 6%, com rendimentos creditados diariamente, sem valores mínimos ou máximos de investimento, e permite levantamentos imediatos, garantindo máxima flexibilidade.</p>
-			</div>
-		</div>
-		<div class="platform">
-			<a href="https://debitum.investments/en/r/INHXT" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Debitum">
-				<img src="./assets/img/logos/debitum.png" alt="Debitum referral code" loading="lazy"/>
-			</a>
-			<div class="platform-content">
-				<h3 class="platform-title">
-					<a href="https://debitum.investments/en/r/INHXT" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Debitum" class="platform-name">Debitum</a>
-				</h3>
-				<p class="promotion">
-					<b>Promoção: </b>20€* (*para um investimento de 1.000€. Para mais detalhes, consultar <a href="https://debitum.investments/en/loyalty-program" target="_blank" rel="noopener noreferrer nofollow" title="Debitum Loyalty Program" style="color: white; text-decoration: none; font-style: italic;">aqui</a> )</p>
-				<p class="description">
-					<b>Sobre: </b>A Debitum Investments é uma plataforma marketplace regulada e licenciada, especializada em empréstimos empresariais (P2B). Oferece uma taxa média de retorno na ordem dos 12%, focando-se em empréstimos com garantias (ABS) e análise de risco criteriosa</p>
-			</div>
-		</div>
-		<div class="platform">
-			<a href="https://getincome.com/register?ref_code=0O674X" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Income">
-				<img src="./assets/img/logos/income.png" alt="Income referral code" loading="lazy"/>
-			</a>
-			<div class="platform-content">
-				<h3 class="platform-title">
-					<a href="https://getincome.com/register?ref_code=0O674X" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Income" class="platform-name">Income</a>
-				</h3>
-				<p class="promotion">
-					<b>Promoção: </b>10€ de boas-vindas</p>
-				<p class="description">
-					<b>Sobre: </b>A Income é uma plataforma regulada focada em empréstimos com proteção adicional para o investidor, através do seu inovador modelo de “Skin in the Game” e estrutura de garantias. Opera principalmente na Europa de Leste, com retornos a rondar os 12%, sendo uma opção interessante para quem valoriza segurança e diversificação.</p>
-			</div>
-		</div>
-		<div class="platform">
-			<a href="https://devon.eu/join/bQZg5wnU" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Devon">
-				<img src="./assets/img/logos/devon.png" alt="Devon referral code" loading="lazy"/>
-			</a>
-			<div class="platform-content">
-				<h3 class="platform-title">
-					<a href="https://devon.eu/join/bQZg5wnU" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Devon" class="platform-name">Devon</a>
-				</h3>
-				<p class="promotion">
-					<b>Promoção: </b>1% dos investimentos realizados durante os primeiros 60 dias (mínimo de 1.000€)</p>
-				<p class="description">
-					<b>Sobre: </b>A Devon é uma plataforma de investimento focada em financiar empreendimentos e projetos imobiliários na Europa. Permite investir diretamente em ativos ligados a construção, reabilitação e desenvolvimento imobiliário, com transparência e retornos atrativos (14-15%). É uma opção interessante para quem procura diversificação no setor imobiliário com prazos definidos e análise de risco criteriosa.</p>
-			</div>
-		</div>		
-		<div class="platform">
-			<a href="https://ff-forest.com?referral_code=W9A31IDH" target="_blank" rel="noopener noreferrer nofollow" title="Campanha FF Forest">
-				<img src="./assets/img/logos/ff-forest.png" alt="FF Forest referral code" loading="lazy"/>
-			</a>
-			<div class="platform-content">
-				<h3 class="platform-title">
-					<a href="https://ff-forest.com?referral_code=W9A31IDH" target="_blank" rel="noopener noreferrer nofollow" title="Campanha FF Forest" class="platform-name">FF Forest</a>
-				</h3>
-				<p class="promotion">
-					<b>Promoção: </b>1% dos investimentos realizados durante os primeiros 180 dias (mínimo de 500€)</p>
-				<p class="description">
-					<b>Sobre: </b>A FF Forest (FinForta Forest) é uma plataforma de investimento alternativa focada em projetos ligados ao setor florestal e sustentável. Permite aos investidores participar no financiamento de ativos reais, com retornos previsíveis e uma forte componente de impacto ambiental positivo, combinando alto rendimento financeiro (17-18%) com investimento responsável.</p>
-			</div>
-		</div>
-		<div class="platform">
-			<a href="https://app.maclear.ch/en/registration?ref=DD1E7S" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Maclear">
-				<img src="./assets/img/logos/maclear.png" alt="Maclear referral code" loading="lazy"/>
-			</a>
-			<div class="platform-content">
-				<h3 class="platform-title">
-					<a href="https://app.maclear.ch/en/registration?ref=DD1E7S" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Maclear" class="platform-name">Maclear</a>
-				</h3>
-				<p class="promotion">
-					<b>Promoção: </b>15€ + 3% dos investimentos realizados durante os primeiros 90 dias</p>
-				<p class="description">
-					<b>Sobre: </b>A Maclear é uma plataforma regulada com sede na Suíça, especializada em empréstimos empresariais na Europa. Focada na transparência e na qualidade do crédito, permite investir de forma simples em ativos com garantias (colaterais). Os retornos típicos rondam os 15%.</p>
-			</div>
-		</div>
-		<div class="platform">
-			<a href="https://www.mintos.com/es/l/ref/27X909" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Mintos">
-				<img src="./assets/img/logos/mintos.png" alt="Mintos" loading="lazy"/>
-			</a>
-			<div class="platform-content">
-				<h3 class="platform-title">
-					<a href="https://www.mintos.com/es/l/ref/27X909" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Mintos" class="platform-name">Mintos</a>
-				</h3>
-				<p class="promotion">
-					<b>Promoção: </b>25€ + 1% dos investimentos realizados durante os primeiros 60 dias (mínimo de 1.000€)</p>
-				<p class="description">
-					<b>Sobre: </b>A Mintos é uma plataforma veterana, regulada e licenciada, que funciona como um marketplace de empréstimos. Oferece uma ampla gama de ativos, incluindo créditos ao consumo e empresariais, bem como oportunidades de investimento em imobiliário, obrigações (bonds), ETFs, entre outros.</p>
-			</div>
-		</div>
-		<div class="platform">
-			<a href="https://smartsaver.monefit.com/en/referral/link?code=6dqz3aom" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Monefit">
-				<img src="./assets/img/logos/monefit.png" alt="Monefit referral code" loading="lazy"/>
-			</a>
-			<div class="platform-content">
-				<h3 class="platform-title">
-					<a href="https://smartsaver.monefit.com/en/referral/link?code=6dqz3aom" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Monefit" class="platform-name">Monefit</a>
-				</h3>
-				<p class="promotion">
-					<b>Promoção: </b>0,5% dos investimentos realizados durante os primeiros 90 dias</p>
-				<p class="description">
-					<b>Sobre: </b>A Monefit, à semelhança da Bondora, é uma plataforma intuitiva e adequada para quem está a começar, que automatiza o investimento em múltiplos empréstimos. A Monefit oferece um retorno anualizado que pode ir até 10,52%, dependendo do compromisso estabelecido, com rendimentos creditados diariamente, sem valores mínimos ou máximos de investimento.</p>
-			</div>
-		</div>
-		<div class="platform">
-			<a href="https://nectaro.eu/registration/individual/?referralCode=E6F9D" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Nectaro">
-				<img src="./assets/img/logos/nectaro.png" alt="Nectaro referral code" loading="lazy"/>
-			</a>
-			<div class="platform-content">
-				<h3 class="platform-title">
-					<a href="https://nectaro.eu/registration/individual/?referralCode=E6F9D" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Nectaro" class="platform-name">Nectaro</a>
-				</h3>
-				<p class="promotion">
-					<b>Promoção: </b>1% dos investimentos realizados durante os primeiros 30 dias (mínimo de 300€)</p>
-				<p class="description">
-					<b>Sobre: </b>A Nectaro é uma plataforma regulada e orientada para o investimento em empréstimos com garantia de recompra, operando sobretudo em mercados da Europa Central e de Leste. Com uma equipa experiente, é uma opção acessível e fiável para diversificar o portefólio.</p>
-			</div>
-		</div>
-		<div class="platform">
-			<a href="https://ventus.energy/join/ODLtQPbj" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Ventus">
-				<img src="./assets/img/logos/ventus.png" alt="Ventus referral code" loading="lazy"/>
-			</a>
-			<div class="platform-content">
-				<h3 class="platform-title">
-					<a href="https://ventus.energy/join/ODLtQPbj" target="_blank" rel="noopener noreferrer nofollow" title="Campanha Ventus" class="platform-name">Ventus</a>
-				</h3>
-				<p class="promotion">
-					<b>Promoção: </b>1% dos investimentos realizados durante os primeiros 60 dias (mínimo de 1.000€)</p>
-				<p class="description">
-					<b>Sobre: </b>A Ventus é uma plataforma inovadora que liga investidores a projetos de energia renovável na Europa, principalmente nos países bálticos. Através de uma estrutura de financiamento sustentável e transparente, permite investir diretamente na transição energética, com retornos previsíveis, na ordem dos 17-18%, e impacto ambiental positivo.</p>
-			</div>
-		</div>
-		<div class="platform">
-			<a href="https://app.8lends.io/?referral=TyOS6P" target="_blank" rel="noopener noreferrer nofollow" title="Campanha 8Lends">
-				<img src="./assets/img/logos/8lends.png" alt="8Lends referral code" loading="lazy"/>
-			</a>
-			<div class="platform-content">
-				<h3 class="platform-title">
-					<a href="https://app.8lends.io/?referral=TyOS6P" target="_blank" rel="noopener noreferrer nofollow" title="Campanha 8Lends" class="platform-name">8Lends</a>
-				</h3>
-				<p class="promotion">
-					<b>Promoção: </b>30 USDCs + 6% dos investimentos realizados durante os primeiros 90 dias (mínimo de 100€)</p>
-				<p class="description">
-					<b>Sobre: </b>A 8Lends é uma plataforma de investimento semelhante à Maclear, mas com enfoque no universo Web3/DeFi. Os investimentos são realizados em USDCs, através da blockchain, oferecendo uma abordagem mais descentralizada e transparente. Os retornos rondam os 20%.</p>
-			</div>
-		</div>
+        <!-- Início da Lista de Plataformas -->
+        
+        <!-- 8Lends -->
+        <div class="platform">
+            <a href="https://app.8lends.io/?referral=TyOS6P" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/logos/8lends.png" alt="8Lends" loading="lazy">
+            </a>
+            <div class="platform-content">
+                <a href="https://app.8lends.io/?referral=TyOS6P" class="platform-name" target="_blank" rel="noopener noreferrer">8Lends</a>
+                <p class="promotion"><strong>Promoção: </strong>30 USDCs + 6% dos investimentos realizados durante os primeiros 90 dias (mínimo de 100€)</p>
+                <p class="description">A 8Lends é uma plataforma de investimento semelhante à Maclear, mas com enfoque no universo Web3/DeFi. Os investimentos são realizados em USDCs, através da blockchain, oferecendo uma abordagem mais descentralizada e transparente. Os retornos rondam os 20%.</p>
+            </div>
+        </div>
+
+        <!-- Afranga -->
+        <div class="platform">
+            <a href="https://c.trackmytarget.com/?a=t1ae89&i=xhh9rg" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/logos/afranga.png" alt="Afranga" loading="lazy">
+            </a>
+            <div class="platform-content">
+                <a href="https://c.trackmytarget.com/?a=t1ae89&i=xhh9rg" class="platform-name" target="_blank" rel="noopener noreferrer">Afranga</a>
+                <p class="promotion"><strong>Promoção: </strong>0.5% de cashback sobre o valor investido durante os primeiros 90 dias.</p>
+                <p class="description">Plataforma búlgara licenciada (ECSP) focada em empresas de elevado crescimento. Com retornos até 16%, destaca-se pelo histórico impecável sem incumprimentos desde 2021.</p>
+            </div>
+        </div>
+
+        <!-- Asterra Estate -->
+        <div class="platform">
+            <a href="https://c.trackmytarget.com/?a=m570a0&i=xhh9rg" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/logos/asterra.png" alt="Asterra Estate" loading="lazy">
+            </a>
+            <div class="platform-content">
+                <a href="https://c.trackmytarget.com/?a=m570a0&i=xhh9rg" class="platform-name" target="_blank" rel="noopener noreferrer">Asterra Estate</a>
+                <p class="promotion"><strong>Promoção: </strong>1% de cashback extra e directo sobre todos os investimentos nos primeiros 90 dias.</p>
+                <p class="description">Especializada no mercado imobiliário de Riga (Letónia), a Asterra financia projetos residenciais com garantias reais e gestão de equipa interna experiente.</p>
+            </div>
+        </div>
+
+        <!-- Bondora -->
+        <div class="platform">
+            <a href="https://c.bondora.com/?a=qffgns&i=xhh9rg" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/logos/bondora.png" alt="Bondora" loading="lazy">
+            </a>
+            <div class="platform-content">
+                <a href="https://c.bondora.com/?a=qffgns&i=xhh9rg" class="platform-name" target="_blank" rel="noopener noreferrer">Bondora</a>
+                <p class="promotion"><strong>Promoção: </strong>5€ de boas-vindas + 5€ após investimento de 50€+.</p>
+                <p class="description">A Bondora é uma plataforma intuitiva e adequada para quem está a começar, que automatiza o investimento em múltiplos empréstimos. A Bondora oferece um retorno anualizado de 6%, com rendimentos creditados diariamente, sem valores mínimos ou máximos de investimento, e permite levantamentos imediatos, garantindo máxima flexibilidade.</p>
+            </div>
+        </div>
+
+        <!-- Crowdpear -->
+        <div class="platform">
+            <a href="https://c.crowdpear.com/?a=qe2645&i=xhh9rg" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/logos/crowdpear.png" alt="Crowdpear" loading="lazy">
+            </a>
+            <div class="platform-content">
+                <a href="https://c.crowdpear.com/?a=qe2645&i=xhh9rg" class="platform-name" target="_blank" rel="noopener noreferrer">Crowdpear</a>
+                <p class="promotion"><strong>Promoção: </strong>1% de bónus sobre todos os investimentos realizados nos primeiros 90 dias.</p>
+                <p class="description">Plataforma lituana regulada com projetos garantidos por hipotecas de primeiro grau, assegurando proteção aos investidores com retornos até 15%.</p>
+            </div>
+        </div>
+
+        <!-- Debitum -->
+        <div class="platform">
+            <a href="https://debitum.investments/en/r/INHXT" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/logos/debitum.png" alt="Debitum" loading="lazy">
+            </a>
+            <div class="platform-content">
+                <a href="https://debitum.investments/en/r/INHXT" class="platform-name" target="_blank" rel="noopener noreferrer">Debitum</a>
+                <p class="promotion"><strong>Promoção: </strong>25€* (* para um investimento de 1.000€).</p>
+                <p class="description">Focada no financiamento de PMEs, a Debitum utiliza títulos de dívida (ABS) para garantir monitorização profissional e garantias empresariais sólidas.</p>
+            </div>
+        </div>
+
+        <!-- Devon -->
+        <div class="platform">
+            <a href="https://c.trackmytarget.com/?a=3s5bdf&i=xhh9rg" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/logos/devon.png" alt="Devon" loading="lazy">
+            </a>
+            <div class="platform-content">
+                <a href="https://c.trackmytarget.com/?a=3s5bdf&i=xhh9rg" class="platform-name" target="_blank" rel="noopener noreferrer">Devon</a>
+                <p class="promotion"><strong>Promoção: </strong>1% dos investimentos realizados durante os primeiros 60 dias.</p>
+                <p class="description">A Devon é uma plataforma de investimento focada em financiar empreendimentos e projetos imobiliários na Europa. Permite investir diretamente em ativos ligados a construção, reabilitação e desenvolvimento imobiliário, com transparência e retornos atrativos (14-15%). É uma opção interessante para quem procura diversificação no setor imobiliário com prazos definidos e análise de risco criteriosa.</p>
+            </div>
+        </div>
+
+        <!-- FF Forest -->
+        <div class="platform">
+            <a href="https://c.trackmytarget.com/?a=g64b6e&i=xhh9rg" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/logos/ff-forest.png" alt="FF Forest" loading="lazy">
+            </a>
+            <div class="platform-content">
+                <a href="https://c.trackmytarget.com/?a=g64b6e&i=xhh9rg" class="platform-name" target="_blank" rel="noopener noreferrer">FF Forest</a>
+                <p class="promotion"><strong>Promoção: </strong>1% de cashback extra e directo em todos os investimentos realizados nos primeiros 60 dias.</p>
+                <p class="description">Projeto sustentável de gestão de ativos florestais. Combina rentabilidade até 18% com impacto ecológico e garantias de recompra via blockchain.</p>
+            </div>
+        </div>
+
+        <!-- Finforta -->
+        <div class="platform">
+            <a href="https://c.trackmytarget.com/?a=xhtmgn&i=xhh9rg" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/logos/finforta.png" alt="Finforta" loading="lazy">
+            </a>
+            <div class="platform-content">
+                <a href="https://c.trackmytarget.com/?a=xhtmgn&i=xhh9rg" class="platform-name" target="_blank" rel="noopener noreferrer">Finforta</a>
+                <p class="promotion"><strong>Promoção: </strong>2% de cashback no depósito do primeiro "Earn Project".</p>
+                <p class="description">Permite investir em projetos tokenizados utilizando Euros, oferecendo juros diários e projetos de curto prazo com rentabilidades médias de 15%.</p>
+            </div>
+        </div>
+
+        <!-- Hive5 -->
+        <div class="platform">
+            <a href="https://c.trackmytarget.com/?a=eevj74&i=xhh9rg" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/logos/hive5.png" alt="Hive5" loading="lazy">
+            </a>
+            <div class="platform-content">
+                <a href="https://c.trackmytarget.com/?a=eevj74&i=xhh9rg" class="platform-name" target="_blank" rel="noopener noreferrer">Hive5</a>
+                <p class="promotion"><strong>Promoção: </strong>1% de cashback sobre os investimentos realizados nos primeiros 90 dias.</p>
+                <p class="description">Com uma política de "zero atrasos", a Hive5 garante pagamentos pontuais e retornos médios de 15% num ambiente de total transparência.</p>
+            </div>
+        </div>
+
+        <!-- Income -->
+        <div class="platform">
+            <a href="https://getincome.com/register?ref_code=0O674X" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/logos/income.png" alt="Income" loading="lazy">
+            </a>
+            <div class="platform-content">
+                <a href="https://getincome.com/register?ref_code=0O674X" class="platform-name" target="_blank" rel="noopener noreferrer">Income (GetIncome)</a>
+                <p class="promotion"><strong>Promoção: </strong>10€ de bónus de boas-vindas.</p>
+                <p class="description">Utiliza mecanismos de segurança como o "Cashflow Buffer" para proteger o capital dos investidores em empréstimos de consumo globais.</p>
+            </div>
+        </div>
+
+        <!-- Indemo -->
+        <div class="platform">
+            <a href="https://c.trackmytarget.com/?a=2cxoqk&i=xhh9rg" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/logos/indemo.png" alt="Indemo" loading="lazy">
+            </a>
+            <div class="platform-content">
+                <a href="https://c.trackmytarget.com/?a=2cxoqk&i=xhh9rg" class="platform-name" target="_blank" rel="noopener noreferrer">Indemo</a>
+                <p class="promotion"><strong>Promoção: </strong>Até 5% de cashback e um bónus adicional de 0.5% no registo.</p>
+                <p class="description">Especialista em dívida imobiliária com desconto em Espanha. Oferece proteção europeia e retornos históricos superiores a 20%.</p>
+            </div>
+        </div>
+
+        <!-- LANDE -->
+        <div class="platform">
+            <a href="https://c.trackmytarget.com/?a=lfw4z1&i=xhh9rg" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/logos/lande.png" alt="Lande" loading="lazy">
+            </a>
+            <div class="platform-content">
+                <a href="https://c.trackmytarget.com/?a=lfw4z1&i=xhh9rg" class="platform-name" target="_blank" rel="noopener noreferrer">LANDE</a>
+                <p class="promotion"><strong>Promoção: </strong>1% de cashback sobre o valor investido nos primeiros 30 dias.</p>
+                <p class="description">Líder em crowdlending agrícola, financia agricultores com colateral em terras e maquinaria, unindo segurança e rentabilidade estável.</p>
+            </div>
+        </div>
+
+        <!-- Lendiball -->
+        <div class="platform">
+            <a href="https://c.trackmytarget.com/?a=x80628&i=xhh9rg" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/logos/lendiball.png" alt="Lendiball" loading="lazy">
+            </a>
+            <div class="platform-content">
+                <a href="https://c.trackmytarget.com/?a=x80628&i=xhh9rg" class="platform-name" target="_blank" rel="noopener noreferrer">Lendiball</a>
+                <p class="promotion"><strong>Promoção: </strong>Bónus de investimento disponível para novos utilizadores (90 dias).</p>
+                <p class="description">Investimentos em mercados do Leste Europeu sob supervisão bancária rigorosa, focados em transparência e conformidade regulatória.</p>
+            </div>
+        </div>
+
+        <!-- Loanch -->
+        <div class="platform">
+            <a href="https://c.trackmytarget.com/?a=mt4qfe&i=xhh9rg" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/logos/loanch.png" alt="Loanch" loading="lazy">
+            </a>
+            <div class="platform-content">
+                <a href="https://c.trackmytarget.com/?a=mt4qfe&i=xhh9rg" class="platform-name" target="_blank" rel="noopener noreferrer">Loanch</a>
+                <p class="promotion"><strong>Promoção: </strong>1% de cashback em todos os investimentos nos primeiros 90 dias.</p>
+                <p class="description">Especializada em crédito no Sudeste Asiático, oferece retornos de 14.5% com Garantia de Recompra (Buyback) em caso de atrasos.</p>
+            </div>
+        </div>
+
+        <!-- Lonvest -->
+        <div class="platform">
+            <a href="https://c.trackmytarget.com/?a=m0c71f&i=xhh9rg" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/logos/lonvest.png" alt="Lonvest" loading="lazy">
+            </a>
+            <div class="platform-content">
+                <a href="https://c.trackmytarget.com/?a=m0c71f&i=xhh9rg" class="platform-name" target="_blank" rel="noopener noreferrer">Lonvest</a>
+                <p class="promotion"><strong>Promoção: </strong>1% de cashback sobre todos os investimentos nos primeiros 90 dias.</p>
+                <p class="description">Parte do grupo SpaceCrew Finance, oferece retornos até 13% com foco em gestão de risco e facilidade de utilização.</p>
+            </div>
+        </div>
+
+        <!-- Maclear -->
+        <div class="platform">
+            <a href="https://app.maclear.ch/en/registration?ref=DD1E7S" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/logos/maclear.png" alt="Maclear" loading="lazy">
+            </a>
+            <div class="platform-content">
+                <a href="https://app.maclear.ch/en/registration?ref=DD1E7S" class="platform-name" target="_blank" rel="noopener noreferrer">Maclear</a>
+                <p class="promotion"><strong>Promoção: </strong>15€ + 3% dos investimentos realizados durante os primeiros 90 dias.</p>
+                <p class="description">Plataforma suíça focada em financiamento empresarial robusto, unindo precisão financeira e crescimento para PMEs.</p>
+            </div>
+        </div>
+
+        <!-- Mintos -->
+        <div class="platform">
+            <a href="https://c.trackmytarget.com/?a=b3vza7&i=xhh9rg" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/logos/mintos.png" alt="Mintos" loading="lazy">
+            </a>
+            <div class="platform-content">
+                <a href="https://c.trackmytarget.com/?a=b3vza7&i=xhh9rg" class="platform-name" target="_blank" rel="noopener noreferrer">Mintos</a>
+                <p class="promotion"><strong>Promoção: </strong>25€ + 1% cashback nos primeiros 60 dias (mínimo 1.000€).</p>
+                <p class="description">Líder europeia regulada com a maior variedade de ativos e diversificação em empréstimos de consumo e imobiliário.</p>
+            </div>
+        </div>
+
+        <!-- Modena -->
+        <div class="platform">
+            <a href="https://c.trackmytarget.com/?a=2c5l0q&i=xhh9rg" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/logos/modena.png" alt="Modena" loading="lazy">
+            </a>
+            <div class="platform-content">
+                <a href="https://c.trackmytarget.com/?a=2c5l0q&i=xhh9rg" class="platform-name" target="_blank" rel="noopener noreferrer">Modena</a>
+                <p class="promotion"><strong>Promoção: </strong>Bónus exclusivo disponível para novos investidores.</p>
+                <p class="description">A Modena, à semelhança da Bondora, é uma plataforma intuitiva e adequada para quem está a começar, que automatiza o investimento em múltiplos empréstimos.</p>
+            </div>
+        </div>
+
+        <!-- Monefit -->
+        <div class="platform">
+            <a href="https://c.trackmytarget.com/?a=v09036&i=xhh9rg" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/logos/monefit.png" alt="Monefit" loading="lazy">
+            </a>
+            <div class="platform-content">
+                <a href="https://c.trackmytarget.com/?a=v09036&i=xhh9rg" class="platform-name" target="_blank" rel="noopener noreferrer">Monefit</a>
+                <p class="promotion"><strong>Promoção: </strong>0,5% dos investimentos realizados nos primeiros 90 dias.</p>
+                <p class="description">A Monefit, à semelhança da Bondora, é uma plataforma intuitiva e adequada para quem está a começar, que automatiza o investimento em múltiplos empréstimos. A Monefit oferece um retorno anualizado que pode ir até 10,52%, dependendo do compromisso estabelecido, com rendimentos creditados diariamente, sem valores mínimos ou máximos de investimento.</p>
+            </div>
+        </div>
+
+        <!-- Nectaro -->
+        <div class="platform">
+            <a href="https://c.trackmytarget.com/?a=i5pjek&i=xhh9rg" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/logos/nectaro.png" alt="Nectaro" loading="lazy">
+            </a>
+            <div class="platform-content">
+                <a href="https://c.trackmytarget.com/?a=i5pjek&i=xhh9rg" class="platform-name" target="_blank" rel="noopener noreferrer">Nectaro</a>
+                <p class="promotion"><strong>Promoção: </strong>1% cashback nos primeiros 30 dias</p>
+                <p class="description">A Nectaro é uma plataforma regulada e orientada para o investimento em empréstimos com garantia de recompra, operando sobretudo em mercados da Europa Central e de Leste. Com uma equipa experiente, é uma opção acessível e fiável para diversificar o portefólio.</p>
+            </div>
+        </div>
+
+        <!-- Peerberry -->
+        <div class="platform">
+            <a href="https://c.peerberry.com/?a=wc58g4&i=xhh9rg" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/logos/peerberry.png" alt="Peerberry" loading="lazy">
+            </a>
+            <div class="platform-content">
+                <a href="https://c.peerberry.com/?a=wc58g4&i=xhh9rg" class="platform-name" target="_blank" rel="noopener noreferrer">Peerberry</a>
+                <p class="promotion"><strong>Promoção: </strong>0.5% de cashback sobre investimentos nos primeiros 90 dias.</p>
+                <p class="description">Focada em fiabilidade e proteção ao investidor, a Peerberry trabalha com originadores estáveis em empréstimos de curto prazo.</p>
+            </div>
+        </div>
+
+        <!-- Robocash -->
+        <div class="platform">
+            <a href="https://c.trackmytarget.com/?a=i33194&i=xhh9rg" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/logos/robocash.png" alt="Robocash" loading="lazy">
+            </a>
+            <div class="platform-content">
+                <a href="https://c.trackmytarget.com/?a=i33194&i=xhh9rg" class="platform-name" target="_blank" rel="noopener noreferrer">Robocash</a>
+                <p class="promotion"><strong>Promoção: </strong>1% de bónus nos investimentos realizados no primeiro mês.</p>
+                <p class="description">Referência em automação total. Oferece juros compostos e garantia de recompra absoluta ligada ao grupo financeiro Robocash.</p>
+            </div>
+        </div>
+
+        <!-- Scramble -->
+        <div class="platform">
+            <a href="https://c.trackmytarget.com/?a=9ueusw&i=xhh9rg" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/logos/scramble.png" alt="Scramble" loading="lazy">
+            </a>
+            <div class="platform-content">
+                <a href="https://c.trackmytarget.com/?a=9ueusw&i=xhh9rg" class="platform-name" target="_blank" rel="noopener noreferrer">Scramble</a>
+                <p class="promotion"><strong>Promoção: </strong>1% de bónus sobre os investimentos nos primeiros 90 dias.</p>
+                <p class="description">Financiamento de stock para marcas de e-commerce e PMEs com vendas comprovadas e retornos atrativos.</p>
+            </div>
+        </div>
+
+        <!-- Triple Dragon -->
+        <div class="platform">
+            <a href="https://c.trackmytarget.com/?a=ehbmky&i=xhh9rg" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/logos/3dragon.png" alt="Triple Dragon" loading="lazy">
+            </a>
+            <div class="platform-content">
+                <a href="https://c.trackmytarget.com/?a=ehbmky&i=xhh9rg" class="platform-name" target="_blank" rel="noopener noreferrer">Triple Dragon</a>
+                <p class="promotion"><strong>Promoção: </strong>2% de cashback instantâneo em projetos selecionados.</p>
+                <p class="description">Financiamento inovador para estúdios de videojogos e apps, ligando alta rentabilidade ao mercado de entretenimento digital.</p>
+            </div>
+        </div>
+
+        <!-- Twino -->
+        <div class="platform">
+            <a href="https://c.trackmytarget.com/?a=4mnq1s&i=xhh9rg" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/logos/twino.png" alt="Twino" loading="lazy">
+            </a>
+            <div class="platform-content">
+                <a href="https://c.trackmytarget.com/?a=4mnq1s&i=xhh9rg" class="platform-name" target="_blank" rel="noopener noreferrer">Twino</a>
+                <p class="promotion"><strong>Promoção: </strong>Bónus de boas-vindas disponível via link de convite.</p>
+                <p class="description">Uma das pioneiras na Letónia, oferece estrutura regulada para investimento em empréstimos e imobiliário.</p>
+            </div>
+        </div>
+
+        <!-- Ventus -->
+        <div class="platform">
+            <a href="https://c.trackmytarget.com/?a=tq2cp4&i=xhh9rg" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/logos/ventus.png" alt="Ventus" loading="lazy">
+            </a>
+            <div class="platform-content">
+                <a href="https://c.trackmytarget.com/?a=tq2cp4&i=xhh9rg" class="platform-name" target="_blank" rel="noopener noreferrer">Ventus</a>
+                <p class="promotion"><strong>Promoção: </strong>1% cashback nos primeiros 60 dias.</p>
+                <p class="description">Investimentos diretos em energia renovável com retornos elevados e impacto ambiental positivo comprovado.</p>
+            </div>
+        </div>
+
+        <!-- Fim da Lista -->
+
 			
 		<p class="coming-soon">Mais plataformas muito em breve...</p>
 
