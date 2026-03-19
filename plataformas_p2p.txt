@@ -23,6 +23,7 @@ Nectaro
 Peerberry
 Robocash
 Scramble
+Stock Estate
 T. Dragon
 Twino
 Ventus
